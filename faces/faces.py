@@ -1,1 +1,1 @@
-input("Enter text: ")
+input("Enter text: 🙂")
