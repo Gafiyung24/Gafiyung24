@@ -1,3 +1,2 @@
-input("Enter tex
-
+input("Enter text: {':)'}").format(🙂)
 
