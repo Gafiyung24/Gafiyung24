@@ -1,1 +1,1 @@
-hello :)
+input("Enter text: ")
