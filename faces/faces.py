@@ -1,2 +1,2 @@
-input("Enter text: {':)'}.format(🙂)
+p = "
 
