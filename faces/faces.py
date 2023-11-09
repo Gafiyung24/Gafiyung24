@@ -1,2 +1,3 @@
-:) = 🙂
-input("Enter text)
+input("Enter tex
+
+
