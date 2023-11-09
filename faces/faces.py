@@ -1,2 +1,2 @@
-input("Enter text: {':)'}").format(🙂)
+input("Enter text: {':)'}.format(🙂)
 
