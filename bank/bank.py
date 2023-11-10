@@ -1,2 +1,4 @@
 x = input("Greeting: ").lower().strip()
-if x == "
+if x.find("hello") == True:
+    print("$0")
+    
