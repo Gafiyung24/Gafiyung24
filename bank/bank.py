@@ -1,5 +1,5 @@
 x = input("Greeting: ").lower().strip()
-if x == "hello" or x.find("hello") == 0:
+if x == "hello" or "hello" in x == True:
     print("$0")
 elif x.find("h") == 0 and x != "helllo":
     print("$20")
