@@ -6,7 +6,7 @@ if x.find(".") == -1:
     print("application/octet-stream")
 #for more than one extension
 elif x.count(".") == 2:
-     x = x.split(".")[1].strip()
+     x = x.split(".")[1]
      #x1 = x.split(".")[1].strip()
      print(x)
 '''
