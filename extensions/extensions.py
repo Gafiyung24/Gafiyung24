@@ -8,9 +8,11 @@ if x.find(".") == -1:
 #getting substring for file extension
 else:
     x1 = x.split(".")[1].strip()
+    if x1 == "jpg":
+        x1 = "jpeg"
 # condtional statement to find the type of file extensions
     match x1:
-        case "gif" | "jpg" | "jpeg" | "png":
+        case "gif" | "jpeg" | "png":
             print(f"image/{x1}")
         case "pdf" | "txt" | "zip":
             print(f"application/{x1}")
