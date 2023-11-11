@@ -5,7 +5,8 @@ x = input("File name: ").strip().lower().replace("jpg", "jpeg")
 if x.find(".") == -1:
     print("application/octet-stream")
 elif x.count(".") == 2:
-     x = x.split(".")
+     x = x.split(".")[1].strip()
+     x1 = x.split(".")[1].strip()
 
 #getting substring for file extension
 else:
