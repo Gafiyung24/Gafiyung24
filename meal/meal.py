@@ -4,11 +4,11 @@ def main():
     T1 = convert(T)
     #condtional statement to know meals
     if 7 <= T1 <= 8:
-        print("Breakfast")
+        print("breakfast time")
     elif 12 <= T1 <= 13:
-        print("Lunch")
+        print("lunch time")
     elif 18 <= T1 <= 19:
-        print("Dinner")
+        print("dinner time")
     else:
         print("")
 
