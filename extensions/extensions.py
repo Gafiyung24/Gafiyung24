@@ -6,10 +6,8 @@ if x.find(".") == -1:
     print("application/octet-stream")
 #for more than one extension
 elif x.count(".") == 2:
-     x = x.split(".")[2]
-     #x1 = x.split(".")[1].strip()
-     print(x)
-'''
+     x1 = x.split(".")[2].strip()
+
 #getting substring for file extension
 else:
     x1 = x.split(".")[1].strip()
@@ -24,4 +22,3 @@ match x1:
         print("text/plain")
     case _:
         print("application/octet-stream")
-'''
