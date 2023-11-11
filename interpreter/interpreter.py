@@ -1,3 +1,3 @@
 #accept user input
-input("Expression: ")
+input("Expression: ").strip()
 
