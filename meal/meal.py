@@ -3,7 +3,10 @@ def main():
     T = input("What time is it? ").strip()
     T1 = convert(T)
     #condtional statement to know meals
-    if 
+    if 7 <= T1 <= 8:
+        print("Breakfast")
+    elif 12 <= T1 <= 13:
+        print
 
 
 def convert(time):
