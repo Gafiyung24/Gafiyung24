@@ -25,6 +25,6 @@ else:
                 print(f"image/{x1}")
             case "pdf" | "zip":
                 print(f"application/{x1}")
-            case 
+            case "
             case _:
                 print("application/octet-stream")
