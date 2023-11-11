@@ -7,8 +7,8 @@ if x.find(".") == -1:
 #for more than one extension
 elif x.count(".") == 2:
      x = x.split(".")[1].strip()
-     x1 = x.split(".")[1].strip()
-     print(x1)
+     #x1 = x.split(".")[1].strip()
+     print(x)
 '''
 #getting substring for file extension
 else:
