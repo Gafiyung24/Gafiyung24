@@ -11,9 +11,10 @@ elif x.count(".") == 2:
     match x1:
             case "gif" | "jpeg" | "png":
                 print(f"image/{x1}")
-            case "pdf" | "txt" | "zip":
+            case "pdf" | "zip":
                 print(f"application/{x1}")
-                
+            case "txt":
+                print("text/plain")
             case _:
                 print("application/octet-stream")
 #getting substring for file extension
