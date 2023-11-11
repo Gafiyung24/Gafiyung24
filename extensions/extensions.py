@@ -6,5 +6,10 @@ x1 = x.split(".")[1].strip()
 match x1:
     case "gif" | "jpg" | "jpeg" | "png":
         print(f"image/{x1}")
-    case 
+    case "pdf" | "txt" | "zip":
+        print(f"application/{x1}")
+    case _:
+        print("application/octet-stream")
+        
+
 
