@@ -1,3 +1,5 @@
 #accept user input
-input("Expression: ").strip()
+E = input("Expression: ").strip().split()
+# condtional statement to make calculations
+if 
 
