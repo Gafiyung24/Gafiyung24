@@ -6,7 +6,11 @@ def main():
     if 7 <= T1 <= 8:
         print("Breakfast")
     elif 12 <= T1 <= 13:
-        print
+        print("Lunch")
+    elif 18 <= T1 <= 19:
+        print("Dinner")
+    else:
+        print("")
 
 
 def convert(time):
