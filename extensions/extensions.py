@@ -1,5 +1,5 @@
-# initialising variable to receive user input and create substring for file extension
-x = input("File name: ").strip().lower()
+# initialising variable to receive user input and replace make jpg the same as jpeg
+x = input("File name: ").strip().lower().replace("jpg", "jpeg")
 
 #checking error incase . is not in entry
 if x.find(".") == -1:
@@ -8,8 +8,7 @@ if x.find(".") == -1:
 #getting substring for file extension
 else:
     x1 = x.split(".")[1].strip()
-    if x1 == "jpg":
-        x1 = "jpeg"
+
 # condtional statement to find the type of file extensions
     match x1:
         case "gif" | "jpeg" | "png":
