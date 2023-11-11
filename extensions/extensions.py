@@ -4,7 +4,8 @@ x = input("File name: ").strip().lower().replace("jpg", "jpeg")
 #checking error incase . is not in entry
 if x.find(".") == -1:
     print("application/octet-stream")
-elif 
+elif x.count(".") == 2:
+     x = x.split(".")
 
 #getting substring for file extension
 else:
