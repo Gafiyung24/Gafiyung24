@@ -7,18 +7,18 @@ Y = int(E[2])
 if E[1] == "+":
     Z = X + Y
     Z = float(Z)
-    print(f"{Z: 1f}")
+    print(f"{Z:.1f}")
 elif E[1] == "-":
     Z = X - Y
     Z = float(Z)
-    print(f"{Z: 1f}")
+    print(f"{Z:.1f}")
 elif E[1] == "*":
     Z = X * Y
     Z = float(Z)
-    print(f"{Z: 1f}")
+    print(f"{Z:.1f}")
 elif E[1] == "/":
     Z = X / Y
     Z = float(Z)
-    print(f"{Z: 1f}")
+    print(f"{Z:.1f}")
 else:
     print("This operation is not recognised")
