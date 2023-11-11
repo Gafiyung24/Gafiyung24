@@ -2,7 +2,7 @@
 x = input("File name: ").strip().lower()
 
 #checking error incase . is not in entry
-if x.find('.') == -1:
+if x.find(".") = -1:
     print("application/octet-stream")
 #getting substring for file extension
 x1 = x.split(".")[1].strip()
