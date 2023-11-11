@@ -23,7 +23,8 @@ else:
     match x1:
             case "gif" | "jpeg" | "png":
                 print(f"image/{x1}")
-            case "pdf" | "txt" | "zip":
+            case "pdf" | "zip":
                 print(f"application/{x1}")
+            case 
             case _:
                 print("application/octet-stream")
