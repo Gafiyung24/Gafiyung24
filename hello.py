@@ -13,12 +13,10 @@ def print_column(height):
 
 main()"""
 def main():
-    print_ square(n)
+    print_square(3)
 
 def print_square(size):
-
-for i in range(size):
-
-print(”#” * size)
+    for i in range(size):
+        print(f"#)
 
 main()
