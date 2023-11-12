@@ -21,8 +21,8 @@ def print_square(size):
 
 main()"""
 user_input = input("name: ")
-for i in user_input:
-    print(i, end="")
+x for i in user_input:
+    print(x)
 
     """if user_input.isupper() is True:
         output = user_input[:-1] + "_"
