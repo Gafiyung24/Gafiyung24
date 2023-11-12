@@ -5,4 +5,5 @@ def main():
 def snake_style(user_input):
     for i in user_input:
         if user_input[i].isupper() is True:
-            output = user_input
+            output = user_input[:i-1] + "_"
+            
