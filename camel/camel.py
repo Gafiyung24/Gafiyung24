@@ -1,5 +1,5 @@
 def main():
-    x = input("camelCase")
+    x = input("camelCase: ")
     snake_case = snake_style(x)
     print(f"snake_case: {snake_case}")
 #function to convert from camel style to snake style
