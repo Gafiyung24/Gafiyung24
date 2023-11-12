@@ -22,7 +22,7 @@ def print_square(size):
 main()"""
 user_input = input("name: ")
 for i in user_input:
-    if user_input[i].isupper() is True:
+    if user_input.isupper() is True:
         output = user_input[:i-1] + "_"
     else:
         output = user_input
