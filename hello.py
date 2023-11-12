@@ -24,6 +24,7 @@ user_input = input("name: ")
 for i, u in enumerate(user_input):
     if u.isupper():
         output = user_input[i] + "_" + u.lower()
+
             # output = user_input[:i] + "_" + u.lower()
-    print(output)
+        print(output)
 
