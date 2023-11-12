@@ -23,7 +23,7 @@ main()"""
 user_input = input("name: ")
 for i, u in enumerate(user_input):
         if u.isupper():
-            output = user_input[:i-1] + "_"
+            output = user_input[:i] + "_"
             print(output)
         else:
             output = user_input
