@@ -23,7 +23,7 @@ main()"""
 user_input = input("name: ")
 for i in user_input:
     if user_input.isupper() is True:
-        output = user_input[:i-1] + "_"
+        output = user_input[:-1] + "_"
     else:
         output = user_input
 print(output)
