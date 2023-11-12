@@ -32,8 +32,8 @@ user_input = input("name: ")
 output = ""
 for i in user_input:
     if i.isupper():
-        output += "_"+i.lower()
+        output = output +  "_" + i.lower()
     else:
-        output +=i
+        output = output + i
 print(output)
 
