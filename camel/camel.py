@@ -1,3 +1,4 @@
 t = "FirstNAme"
-print(len(t))
+for char in t:
+    print(t[2])
 
