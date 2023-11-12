@@ -1,4 +1,4 @@
 t = "FirstNAme"
-for char in t:
+for i in t:
     print(t[2])
 
