@@ -27,6 +27,6 @@ for i, u in enumerate(user_input):
             output = output + "_" + u.lower()
             # output = user_input[:i] + "_" + u.lower()
         else:
-            
-            print(output)
+            output = output + u
+        print(output)
 
