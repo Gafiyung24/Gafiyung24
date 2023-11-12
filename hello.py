@@ -21,11 +21,8 @@ def print_square(size):
 
 main()"""
 user_input = input("name: ")
-for i in user_input:
-    print(user_input)
-
-    """if user_input.isupper() is True:
-        output = user_input[:-1] + "_"
-    else:
-        output = user_input
-print(output)"""
+for i, u in enumerate(user_input):
+        if u.isupper():
+            output = user_input[:i-1] + "_"
+        else:
+            output = user_input
