@@ -2,13 +2,13 @@
 print("hello, World")
 print("meow\n" * 3, end= "")"""
 def main():
-    n = print_column(3)
-    print(f"{n}*3")
+    print_column(3)
+
 
 
 def print_column(height):
     for _ in range(height):
-        print("#")
+        print("#" * 3)
 
 
 main()
