@@ -12,12 +12,11 @@ def calc_change():
         if n != 5 | 10 | 25:
             print("Amount Due:", 50)
             break
-        else:
-            i = n + i
+        i = n + i
 
-            if i < 50:
-                print("Amount Due:", 50-i)
-            else:
-                print("Change Owed:", i-50)
+        if i < 50:
+            print("Amount Due:", 50-i)
+        else:
+            print("Change Owed:", i-50)
 
 main()
