@@ -16,5 +16,8 @@ def calc_change():
                     print("Amount Due:", 50-i)
                 else:
                     print("Change Owed:", i-50)
+        else:
+            print("Amount Due:", 50)
+            i = 50
 main()
 
