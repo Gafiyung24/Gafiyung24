@@ -8,6 +8,8 @@ def calc_change():
     i = 0
     while i < 50:
         n = int(input("Insert Coin: "))
+
+        if n != 5 | 10 |25:
         i = n + i
 
         elif i < 50:
