@@ -11,4 +11,5 @@ def calc_change(amount_due):
         print("Amount Due: ", c)
     else:
         c = 0
-        print("Changed Owed: " c)
+        print("Changed Owed: ", c)
+main()
