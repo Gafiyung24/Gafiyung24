@@ -10,6 +10,6 @@ def calc_change(amount_due):
         c = c - n
         print("Amount Due: ", c)
     else:
-        print("Changed Owed: " )
+        print("Changed Owed: " 0)
 
 
