@@ -6,18 +6,14 @@ def main():
 
 def calc_change():
     i = 0
-    a = (5, 10, 25)
     while i < 50:
         n = int(input("Insert Coin: "))
-        for x in a:
-            if n == a:
-                i = n + i
-                if i < 50:
-                    print("Amount Due:", 50-i)
-                else:
-                    print("Change Owed:", i-50)
+
+        i = n + i
+
+        if i < 50:
+            print("Amount Due:", 50-i)
         else:
-            print("Amount Due:", 50)
-            i = 50
+            print("Change Owed:", i-50)
 main()
 
