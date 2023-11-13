@@ -1,3 +1,6 @@
 #defining price of coke
-coke_price = 50
-calc_change()
+def main():
+    calc_change()
+
+def calc_change():
+    n = int(input())
