@@ -4,7 +4,5 @@ def main():
     calc_change()
 
 def calc_change(amount_due):
-    while 
-
     n = int(input("Insert Coin: "))
 
