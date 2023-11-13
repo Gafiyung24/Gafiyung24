@@ -10,7 +10,7 @@ def calc_change():
     while i < 50:
         n = int(input("Insert Coin: "))
         for x in a:
-            if n == a[x]:
+            if n == a:
                 i = n + i
                 if i < 50:
                     print("Amount Due:", 50-i)
