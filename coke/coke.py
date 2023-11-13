@@ -5,11 +5,10 @@ def main():
     calc_change()
 
 def calc_change():
-    n = int(input("Insert Coin: "))
-    while n < 50:
-        n +=n
-        print("Amount Due: ", 50-n)
+    while True:
         
+        print("Amount Due: ", 50-n)
+
 
         print("Changed Owed: ", )
 return c
