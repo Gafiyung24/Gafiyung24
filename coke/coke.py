@@ -9,14 +9,15 @@ def calc_change():
     while i < 50:
         n = int(input("Insert Coin: "))
 
-        if n != 5 | 10 | 25:
-            print("Amount Due:", 50)
-            break
-        i = n + i
+        if n == 5 | 10 | 25:
+            i = n + i
 
-        if i < 50:
-            print("Amount Due:", 50-i)
+            if i < 50:
+                print("Amount Due:", 50-i)
+            else:
+                print("Change Owed:", i-50)
         else:
-            print("Change Owed:", i-50)
-
+            print("Amount Due:", 50)
+            i = 50
 main()
+
