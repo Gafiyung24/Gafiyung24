@@ -10,8 +10,8 @@ def calc_change():
         n = int(input("Insert Coin: "))
         i = n + i
         if i < 50:
-            print("Amount Due: ", 50-i)
+            print("Amount Due:", 50-i)
         else:
-            print("Changed Owed: ", i-50)
+            print("Changed Owed:", i-50)
 
 main()
