@@ -11,10 +11,9 @@ def calc_change():
 
         if n == 5 | 10 | 25:
             i = n + i
-
             if i < 50:
                 print("Amount Due:", 50-i)
-            if i >= 50:
+            elif i >= 50:
                 print("Change Owed:", i-50)
         else:
             print("Amount Due:", 50)
