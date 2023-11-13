@@ -9,8 +9,8 @@ def calc_change():
     while n < 50:
         n +=n
         print("Amount Due: ", 50-n)
-    elif n is 0 | 50:
         
+
         print("Changed Owed: ", )
 return c
 
