@@ -1,6 +1,7 @@
 #defining price of coke
 def main():
     c = 50
+    print("Amount Due: " , c)
     calc_change()
 
 def calc_change(amount_due):
