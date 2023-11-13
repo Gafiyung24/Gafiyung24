@@ -7,8 +7,8 @@ def main():
 def calc_change(amount_due):
     n = int(input("Insert Coin: "))
     while n < 50:
-        c = 50 - n
-        print("Amount Due: ", c)
+        n = 50 - n
+        print("Amount Due: ", n)
     else:
         c = 0
         print("Changed Owed: ", c)
