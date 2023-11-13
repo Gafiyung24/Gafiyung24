@@ -9,5 +9,7 @@ def calc_change(amount_due):
     while n < c:
         c = c - n
         print("Amount Due: ", c)
+    else:
+        print("Changed Owed: " )
 
 
