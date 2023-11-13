@@ -11,7 +11,7 @@ def calc_change():
 
         if n != 5 | 10 | 25:
             print("Amount Due:", 50)
-            n = 0
+            break
         else:
             i = n + i
 
