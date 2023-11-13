@@ -9,6 +9,7 @@ def calc_change():
     while i < 50:
         n = int(input("Insert Coin: "))
         i = n + i
+
         elif i < 50:
             print("Amount Due:", 50-i)
         else:
