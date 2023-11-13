@@ -10,7 +10,7 @@ def calc_change():
         n = int(input("Insert Coin: "))
 
         if n != 5 | 10 |25:
-            print
+            print()
         i = n + i
 
         elif i < 50:
