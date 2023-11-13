@@ -20,7 +20,7 @@ def print_square(size):
         print("#" * size)
 
 main()"""
-user_input = input("name: ")
+#user_input = input("name: ")
 """for i, u in enumerate(user_input):
     if u.isupper():
             user_input[i] += "_" + u.lower()
@@ -29,11 +29,11 @@ user_input = input("name: ")
         output += u
     print(output)"""
 
-output = ""
+'''output = ""
 for i in user_input:
     if i.isupper():
         output = output +  "_" + i.lower()
     else:
         output = output + i
-print(output)
+print(output)'''
 
