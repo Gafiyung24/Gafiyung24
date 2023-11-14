@@ -37,3 +37,12 @@ for i in user_input:
         output = output + i
 print(output)'''
 
+original_string = "apple, banana, cherry, date, apple"
+substitutions = {'a': 'x', 'e': 'z'}
+
+modified_string = original_string
+for old, new in substitutions.items():
+    modified_string = modified_string.replace(old, new)
+
+print("Original String:", original_string)
+print("Modified String:", modified_string)
