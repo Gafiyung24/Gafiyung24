@@ -18,6 +18,6 @@ def check_len(s):
         return True
 def check_last(s):
     for i, c in enumerate(s):
-        if s[i].isnum
+        if s[i].isnumeric() and s[i+1].isnumeric()
 
 main()
