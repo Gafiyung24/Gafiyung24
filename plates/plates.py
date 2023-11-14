@@ -52,9 +52,9 @@ def check_alnum(s):
 
 def check_all_alpha(s):
     if s.isalpha():
-        p = False
-    else:
         p = True
+    else:
+        p = False
     return p
 
 
