@@ -57,7 +57,9 @@ def check_all_alpha(s):
         p = False
     return p
 
-
+def first_num_zero(s)
+    if s.isslnum():
+        r = s[2:]
 
 main()
 
