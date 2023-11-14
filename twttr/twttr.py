@@ -10,4 +10,4 @@ def remove_vowels():
     for old, new in v.items():
         n = n.replace(old, new)
         print("Output: ", n)
-
+main()
