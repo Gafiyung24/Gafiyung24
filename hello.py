@@ -49,4 +49,4 @@ print("Modified String:", modified_string)'''
 
 p = "AA122"
 for i, v in enumerate(p):
-    print(p[0], p[1])
+    print(v)
