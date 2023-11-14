@@ -13,9 +13,10 @@ def is_valid(s):
 def check_alpha(s):
     #function to check if first 2 digits are alphabets
     p = len(s)
-    for i, c in enumerate(s):
-        if s[0].isalpha() and s[1].isalpha():
-            return True
+    if 2 <= p <= 6:
+        for i, c in enumerate(s):
+            if s[0].isalpha() and s[1].isalpha():
+                return True
 
 def check_len(s):
     #fuction to check if length of plate is within 2 and 6 digits
