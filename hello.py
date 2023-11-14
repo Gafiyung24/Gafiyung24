@@ -72,6 +72,6 @@ def first_num_zero(s):
         else:
             t = False
     return t
-test_string = "cs500"
+test_string = "cs05"
 result = first_num_zero(test_string)
 print(f"{test_string}: {result}")
