@@ -31,6 +31,8 @@ def check_last(s):
 def check_alnum(s):
     if s.isalnum() is True:
         return True
+def check_all_alpha(s):
+    
 
 
 main()
