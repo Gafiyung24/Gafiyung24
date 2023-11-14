@@ -47,7 +47,20 @@ for old, new in substitutions.items():
 print("Original String:", original_string)
 print("Modified String:", modified_string)'''
 
-p = "AA122"
+#p = "AA122"
 """for i, v in enumerate(p):
     print(v)"""
-print(p[0])
+#print(p[0])
+
+def is_first_numeric_digit_zero(s):
+    if s and s[0].isalpha():
+        rest_of_string = s[1:]
+        if rest_of_string.isdigit() and rest_of_string[0] == '0':
+            return True
+    return False
+
+# Test the function with "cs05"
+test_string = "cs05"
+result = is_first_numeric_digit_zero(test_string)
+
+print(f"{test_string}: {result}")
