@@ -64,8 +64,10 @@ def first_num_zero(s):
     if s.isalnum():
         r = s[2:]
         if r[0] == 0:
-            return True
-    return True
+            t = True
+        else:
+            t = False
+    return t
 
 main()
 
