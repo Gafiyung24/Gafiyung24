@@ -70,3 +70,5 @@ def first_num_zero(s):
         if r[0] == 0:
             return True
     return True
+test_string = "cs05"
+result = first_num_zero(test_string)
