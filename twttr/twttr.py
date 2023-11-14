@@ -1,1 +1,1 @@
-n = input("Input: ").lstrip()
+n = input("Input: ").lstrip('aeiou')
