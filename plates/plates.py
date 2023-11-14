@@ -11,7 +11,8 @@ def is_valid(s):
         t = True
     elif check_all_alpha(s) and check_len(s):#for all alphabets
         t = True
-    elif check_alpha(s) and check_len(s) and first_num_zero(s) and 
+    elif check_alpha(s) and check_len(s) and first_num_zero(s):
+        t = 
     else:
         t = False
     return t
