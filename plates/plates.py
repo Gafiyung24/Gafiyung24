@@ -28,8 +28,8 @@ def check_last(s):
         if s[i].isnumeric() and s[i+1:].isnumeric():
             return True
 
-def check_alnum(s):
+"""def check_alnum(s):
     if s.isalpha() and s.isnumeric() is not True:
-        return True
+        return True"""
 
 main()
