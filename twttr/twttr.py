@@ -7,5 +7,7 @@ def remove_vowels():
 #dictionary to contain vowels and an empty string
     v = {"a":"", "e":"", "i":"", "o":"", "u":"" }
 #for loop to iterate through the string
-    for 
+    for old, new in v.items():
+        n = n.replace(old, new)
+        print("Output: ", n)
 
