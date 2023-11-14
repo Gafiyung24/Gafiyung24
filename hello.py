@@ -52,7 +52,7 @@ print("Modified String:", modified_string)'''
     print(v)"""
 #print(p[0])
 
-def is_first_numeric_digit_zero(s):
+"""def is_first_numeric_digit_zero(s):
     if s and s[0].isalpha():
         rest_of_string = s[1:]
         if rest_of_string.isdigit() and rest_of_string[0] == '0':
@@ -63,4 +63,9 @@ def is_first_numeric_digit_zero(s):
 test_string = "cs05"
 result = is_first_numeric_digit_zero(test_string)
 
-print(f"{test_string}: {result}")
+print(f"{test_string}: {result}")"""
+if s.isalnum():
+        r = s[2:]
+        if r[0] == 0:
+            return True
+    return True
