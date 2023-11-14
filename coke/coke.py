@@ -1,4 +1,3 @@
-#defining price of coke
 def main():
     c = 50
     print("Amount Due: " , c)
