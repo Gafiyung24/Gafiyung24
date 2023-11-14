@@ -7,7 +7,7 @@ def main():
 
 
 def is_valid(s):
-    if check_alpha(s) and check_len(s) and check_last(s):
+    if check_alpha(s) and check_len(s) and check_last(s) and check_alnum(s):
         return True
 
 def check_alpha(s):
@@ -28,8 +28,8 @@ def check_last(s):
         if s[i].isnumeric() and s[i+1:].isnumeric():
             return True
 
-"""def check_alnum(s):
-    if s.isalpha() and s.isnumeric() is not True:
-        return True"""
+def check_alnum(s):
+    if s.isalpha() and s.isnumeric() is True:
+        return True
 
 main()
