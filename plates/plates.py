@@ -16,7 +16,7 @@ def check_alpha(s):
     if 2 <= p <= 6:
         for i, c in enumerate(s):
             if s[0].isalpha() and s[1].isalpha():
-                return True
+        return True
 
 def check_len(s):
     #fuction to check if length of plate is within 2 and 6 digits
