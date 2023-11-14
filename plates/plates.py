@@ -34,7 +34,7 @@ def check_len(s):
 def check_last(s):
     #fuction to make suure the last digit is a number
     for i, c in enumerate(s):
-        if s[i].isnumeric() and s[i+1:].isnumeric():
+        if s[i].isnumeric() and s[i+1].isnumeric():
             return True
 
 def check_alnum(s):
