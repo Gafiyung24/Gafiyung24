@@ -48,5 +48,6 @@ print("Original String:", original_string)
 print("Modified String:", modified_string)'''
 
 p = "AA122"
-for i, v in enumerate(p):
-    print(v)
+"""for i, v in enumerate(p):
+    print(v)"""
+print(len(p))
