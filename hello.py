@@ -50,4 +50,4 @@ print("Modified String:", modified_string)'''
 p = "AA122"
 """for i, v in enumerate(p):
     print(v)"""
-print p[0]
+print(p[0])
