@@ -7,7 +7,7 @@ def main():
 
 
 def is_valid(s):
-    if check_alpha(s) and check_len(s) and check_last(s) and check_alnum(s): #for only alphabet and numbers
+    if check_alpha(s) and check_len(s) and check_last(s) and check_alnum(s) and first_num_zero(s): #for only alphabet and numbers
         t = True
     elif check_all_alpha(s) and check_len(s):#for all alphabets
         t = True
@@ -57,7 +57,7 @@ def check_all_alpha(s):
         p = False
     return p
 
-def first_num_zero(s)
+def first_num_zero(s):
     if s.isslnum():
         r = s[2:]
         if r[0] == 0:
