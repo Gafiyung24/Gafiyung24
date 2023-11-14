@@ -12,6 +12,7 @@ def calc_change():
 
         if n != 5 and n!= 10 and n !=25:
             print("Amount Due:", 50)
+            break
         elif i < 50:
             print("Amount Dues:", 50-i)
         else:
