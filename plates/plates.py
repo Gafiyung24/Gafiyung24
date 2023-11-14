@@ -29,7 +29,8 @@ def check_last(s):
             return True
 
 def check_alnum(s):
-    if s.isalnum() is False:
+    if s.isalnum() is True:
         return True
+
 
 main()
