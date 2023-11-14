@@ -14,7 +14,7 @@ def check_alpha(s):
     #function to check if first 2 digits are alphabets
     p = len(s)
     if 2 <= p <= 6:
-        for i, c in enumerate(s):
+        #for i, c in enumerate(s):
             if s[0].isalpha() and s[1].isalpha():
         return True
 
