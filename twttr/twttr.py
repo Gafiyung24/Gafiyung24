@@ -1,2 +1,2 @@
-n = input("Input: ").strip('aeiou')
+n = input("Input: ")
 print(n)
