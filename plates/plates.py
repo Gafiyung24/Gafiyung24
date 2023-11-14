@@ -32,8 +32,11 @@ def check_alnum(s):
     if s.isalnum() is True:
         return True
 def check_all_alpha(s):
-    if s.isalpha() is True:
-        p = 
+    if s.isalpha():
+        p = False
+    else:
+        p = True
+    return p
 
 
 main()
