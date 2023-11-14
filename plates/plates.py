@@ -65,7 +65,7 @@ def first_num_zero(s):
         r = s[2:]
         if r[0] == 0:
             t = True
-        else:
+        elif r[0] != 0:
             t = False
     return t
 
