@@ -38,12 +38,12 @@ def check_alnum(s):
     if s.isalnum() is True:
         return True
 
-"""def check_all_alpha(s):
+def check_all_alpha(s):
     if s.isalpha():
         p = False
     else:
         p = True
-    return p"""
+    return p
 
 
 main()
