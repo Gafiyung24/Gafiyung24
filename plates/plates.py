@@ -60,7 +60,7 @@ def check_all_alpha(s):
 
 def first_num_zero(s):
     if s.isalnum():
-        r = s[1:]
+        r = s[2:]
         if r[0] == 0:
             return True
     return False
