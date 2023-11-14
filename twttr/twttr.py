@@ -1,2 +1,2 @@
-n = input("Input: ").replace('aeiou', '')
+n = input("Input: ").strip('aeiou')
 print(n)
