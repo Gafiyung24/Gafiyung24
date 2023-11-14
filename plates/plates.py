@@ -22,7 +22,10 @@ def check_len(s):
     #fuction to check if length of plate is within 2 and 6 digits
     p = len(s)
     if 2 <= p <= 6:
-        return True
+        p = True
+    else:
+        p = False
+
 
 def check_last(s):
     #fuction to make suure the last digit is a number
