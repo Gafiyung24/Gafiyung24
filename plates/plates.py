@@ -43,7 +43,7 @@ def check_last(s):
         for i, c in enumerate(s):
             if s[i].isnumeric() and s[i:].isnumeric():
                 p = True
-            else:
+            elif :
                 p = False
         return p
 
@@ -59,14 +59,14 @@ def check_all_alpha(s):
         p = False
     return p
 
-def first_num_zero(s):
+"""def first_num_zero(s):
     if s.isalnum():
         r = s[2:]
         if r[0] == 0:
             t = True
         elif r[0] != 0:
             t = False
-    return t
+    return t"""
 
 main()
 
