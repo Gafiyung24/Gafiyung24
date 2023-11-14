@@ -64,7 +64,8 @@ test_string = "cs05"
 result = is_first_numeric_digit_zero(test_string)
 
 print(f"{test_string}: {result}")"""
-if s.isalnum():
+def first_num_zero(s):
+    if s.isalnum():
         r = s[2:]
         if r[0] == 0:
             return True
