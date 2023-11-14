@@ -40,7 +40,7 @@ def check_last(s):
     #fuction to make suure the last digit is a number and first digit is not zero
     if s.isalnum():
         for i, c in enumerate(s):
-            if s[i].isnumeric() and s[i+1:].isnumeric() and s[i] != "0":
+            if s[i].isnumeric() and s[i+1:].isnumeric() and s[i] != 0:
                 p = True
             else:
                 p = False
