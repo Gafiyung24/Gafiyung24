@@ -33,7 +33,7 @@ def check_alnum(s):
         return True
 def check_all_alpha(s):
     if s.isalpha() is True:
-        return False
+        p = 
 
 
 main()
