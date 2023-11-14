@@ -7,8 +7,13 @@ def main():
 
 
 def is_valid(s):
-    if check_alpha(s) and check_len(s) and check_last(s) and check_alnum(s) and check_all_alpha(s):
-        return True
+    if check_alpha(s) and check_len(s) and check_last(s) and check_alnum(s): #for only alphabet and numbers
+        t = True
+    elif check_all_alpha(s) and check_len(s) and check_alpha(s):
+        t = True
+    else:
+        t = False
+    return t
 
 def check_alpha(s):
     #function to check if first 2 digits are alphabets
@@ -32,10 +37,10 @@ def check_len(s):
 
 
 def check_last(s):
-    #fuction to make suure the last digit is a number
+    #fuction to make suure the last digit is a number and first digit is not zero
     if s.isalnum():
         for i, c in enumerate(s):
-            if s[i].isnumeric() and s[i+1:].isnumeric():
+            if s[i].isnumeric() and s[i+1:].isnumeric() and s[i] != 0:
                 p = True
 
 def check_alnum(s):
@@ -51,3 +56,4 @@ def check_all_alpha(s):
 
 
 main()
+
