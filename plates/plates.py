@@ -15,7 +15,7 @@ def check_alpha(s):
     p = len(s)
     if 2 <= p <= 6:
         for i, c in enumerate(s):
-            elif s[0].isalpha() and s[1].isalpha():
+            if s[0].isalpha() and s[1].isalpha():
                 a = True
             else:
                 a = False
