@@ -36,7 +36,7 @@ def check_last(s):
     if s.isalnum():
         for i, c in enumerate(s):
             if s[i].isnumeric() and s[i+1:].isnumeric():
-                return True
+                p = True
 
 def check_alnum(s):
     if s.isalnum() is True:
