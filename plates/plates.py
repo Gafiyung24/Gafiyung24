@@ -30,7 +30,7 @@ def check_last(s):
             return True
 
 def check_alnum(s):
-    if s.isapaha() and s.isnumeric() is False:
+    if s.isalpha() and s.isnumeric() is False:
         return True
 
 main()
