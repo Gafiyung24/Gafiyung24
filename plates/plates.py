@@ -21,7 +21,7 @@ def check_alpha(s):
 def check_len(s):
     #fuction to check if length of plate is within 2 and 6 digits
     p = len(s)
-    if 2 <= p <= 6:
+    if 2 <= p =< 6:
         p = True
     else:
         p = False
@@ -37,12 +37,12 @@ def check_alnum(s):
     if s.isalnum() is True:
         return True
 
-def check_all_alpha(s):
+"""def check_all_alpha(s):
     if s.isalpha():
         p = False
     else:
         p = True
-    return p
+    return p"""
 
 
 main()
