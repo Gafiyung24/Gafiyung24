@@ -29,7 +29,7 @@ def check_last(s):
             return True
 
 def check_alnum(s):
-    if s.isalpha() is :
-        return False
+    if s.isalpha() is TRUE:
+        return 
 
 main()
