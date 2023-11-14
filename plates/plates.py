@@ -7,7 +7,7 @@ def main():
 
 
 def is_valid(s):
-    if check_alpha(s) and check_len(s) and check_last(s) and check_alnum(s):
+    if check_alpha(s) and check_len(s) and check_last(s):
         return True
 
 def check_alpha(s):
