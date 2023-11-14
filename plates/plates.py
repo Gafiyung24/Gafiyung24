@@ -7,10 +7,11 @@ def main():
 
 
 def is_valid(s):
-    if check_alpha(s) and check_len(s) and check_last(s) and check_alnum(s) and first_num_zero(s): #for only alphabet and numbers
+    if check_alpha(s) and check_len(s) and check_last(s) and check_alnum(s): #for only alphabet and numbers
         t = True
     elif check_all_alpha(s) and check_len(s):#for all alphabets
         t = True
+    elif 
     else:
         t = False
     return t
