@@ -12,7 +12,7 @@ def is_valid(s):
     elif check_all_alpha(s) and check_len(s):#for all alphabets
         t = True
     elif check_alpha(s) and check_len(s) and first_num_zero(s):
-        t =
+        t = False
     else:
         t = False
     return t
@@ -65,7 +65,7 @@ def first_num_zero(s):
         r = s[2:]
         if r[0] == 0:
             return True
-    return 
+    return True
 
 main()
 
