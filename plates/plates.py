@@ -12,6 +12,7 @@ def is_valid(s):
 
 def check_alpha(s):
     #function to check if first 2 digits are alphabets
+    p = len(s)
     for i, c in enumerate(s):
         if s[0].isalpha() and s[1].isalpha():
             return True
