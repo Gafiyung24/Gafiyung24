@@ -4,7 +4,7 @@ def main():
     print("Amount Due: " , c)
     calc_change()
 
-def calc_change():
+def calc_change(): #function to calculate amount owed and amount due
     i = 0
     while i < 50:
         n = int(input("Insert Coin: ").strip())
