@@ -9,5 +9,6 @@ def remove_vowels():
 #for loop to iterate through the string
     for old, new in v.items():
         n = n.replace(old, new)
-        n = 
+        n = " ".join(n)
+        print("Output: ", n)
 main()
