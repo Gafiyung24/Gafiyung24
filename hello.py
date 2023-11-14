@@ -68,8 +68,10 @@ def first_num_zero(s):
     if s.isalnum():
         r = s[2:]
         if r[0] == 0:
-            return True
-    return True
-test_string = "cs05"
+            t = True
+        else:
+            t = False
+    return t
+test_string = "cs500"
 result = first_num_zero(test_string)
 print(f"{test_string}: {result}")
