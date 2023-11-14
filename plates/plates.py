@@ -19,7 +19,7 @@ def check_alpha(s):
                 a = True
             else:
                 a = False
-    return a
+        return a
 
 def check_len(s):
     #fuction to check if length of plate is within 2 and 6 digits
