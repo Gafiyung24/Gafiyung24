@@ -17,7 +17,7 @@ def is_valid(s):
     return t
 
 def check_alpha(s):
-    #function to check if first 2 digits are alphabets
+    #function to check if first 2 digits are alphabets and zero
     p = len(s)
     if 2 <= p <= 6:
         for i, c in enumerate(s):
