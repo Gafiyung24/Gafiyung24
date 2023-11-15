@@ -20,7 +20,7 @@ fruits = {
     "tangerine": 50,
     "watermelon": 80
     }
-user_input = input("Item: ")
+user_input = input("Item: ").lower().
 for friut, calories in fruits:
     if fruit == user_input:
         print("Calories:", calories)
