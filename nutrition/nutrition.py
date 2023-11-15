@@ -1,4 +1,4 @@
-Fruits = {
+fruits = {
     "apple": 130,
     "avocado": 50,
     "banana": 110,
@@ -20,3 +20,8 @@ Fruits = {
     "tangerine": 50,
     "watermelon": 80
     }
+user_input = input("Item: ")
+for friut, calories in fruits:
+    if fruit == user_input:
+        print("Calories:", calories)
+
