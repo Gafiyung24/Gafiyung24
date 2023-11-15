@@ -59,12 +59,13 @@ def check_all_alpha(s):
         p = False
     return p
 
-def first_num_zero(s):
+"""def first_num_zero(s):
     if s.isalnum():
         for char in s:
             if char == "0":
                 return True
-            return False
+            return False"""
+
 
 main()
 
