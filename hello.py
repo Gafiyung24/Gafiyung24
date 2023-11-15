@@ -90,24 +90,14 @@ def not_starting_zero(m):
 result = not_starting_zero(x)
 print(f"{x}: {result}")"""
 
-def is_first_digit_zero(input_string):
-    cleaned_string = input_string.lstrip()
 
-    if cleaned_string and cleaned_string[0] == '0' and (len(cleaned_string) == 1 or cleaned_string[1].isdigit()):
-        return True
-    else:
-        return False
 
-# Test the function
-test_string1 = "cs05"
-test_string2 = "cs500"
-
-result1 = is_first_digit_zero(test_string1)
-result2 = is_first_digit_zero(test_string2)
-
-print(f"{test_string1}: {result1}")
-print(f"{test_string2}: {result2}")
-
+ s = "cs500"
+print(first_num_zero(s))
 def first_num_zero(s):
-    
+    l = s.find("0'")
+    for i, c in enumerate(s):
+        if s[l-1].isalpha():
+            return False
+    return True
 
