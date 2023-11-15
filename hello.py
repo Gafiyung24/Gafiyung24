@@ -52,7 +52,7 @@ print("Modified String:", modified_string)'''
     print(v)"""
 #print(p[0])
 
-def is_first_numeric_digit_zero(s):
+"""def is_first_numeric_digit_zero(s):
     if s and s[0].isalpha():
         rest_of_string = s[1:]
         if rest_of_string.isdigit() and rest_of_string[0] == '0':
@@ -63,7 +63,7 @@ def is_first_numeric_digit_zero(s):
 test_string = "cs500"
 result = is_first_numeric_digit_zero(test_string)
 
-print(f"{test_string}: {result}")
+print(f"{test_string}: {result}")"""
 '''def first_num_zero(s):
     if s.isalnum():
         r = s[2:]
@@ -75,3 +75,16 @@ print(f"{test_string}: {result}")
 test_string = "ca500"
 result = first_num_zero(test_string)
 print(f"{test_string}: {result}")'''
+
+x = "J02"
+def not_starting_zero(m):
+    for char in m:
+        if char.isdigit() == True:
+            if char == "0":
+                return True
+            # otherwise, return False
+            return False
+
+    # if we get here, there weren't any numbers
+    return False
+print(f"{test_string}: {result}")
