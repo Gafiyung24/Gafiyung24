@@ -92,8 +92,9 @@ print(f"{x}: {result}")"""
 
 
 
- x = "cs500"
-print(first_num_zero(x))
+
+first_num_zero(s)
+
 
 def first_num_zero(s):
     l = s.find("0")
