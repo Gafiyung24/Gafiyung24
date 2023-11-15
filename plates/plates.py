@@ -11,7 +11,6 @@ def is_valid(s):
         t = True
     elif check_all_alpha(s) and check_len(s):#for all alphabets
         t = True
-
     else:
         t = False
     return t
@@ -59,12 +58,12 @@ def check_all_alpha(s):
         p = False
     return p
 
-"""def first_num_zero(s):
-    if s.isalnum():
-        for char in s:
-            if char == "0":
-                return True
-            return False"""
+def first_num_zero(s):
+    l = s.find("0")
+    for i, c in enumerate(s):
+        if s[l-1].isalpha():
+            return False
+    return True
 
 
 main()

@@ -92,8 +92,11 @@ print(f"{x}: {result}")"""
 
 
 
+def main():
+    x = "cs0500"
 
-first_num_zero(s)
+    p = first_num_zero(x)
+    print(p)
 
 
 def first_num_zero(s):
@@ -102,4 +105,4 @@ def first_num_zero(s):
         if s[l-1].isalpha():
             return False
     return True
-
+main()
