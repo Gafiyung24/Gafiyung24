@@ -21,7 +21,7 @@ fruits = {
     "watermelon": 80
     }
 user_input = input("Item: ").lower().strip()
-for friut, calories in fruits:
-    if fruit == user_input:
+for friut in fruits:
+    if  == user_input:
         print("Calories:", calories)
 
