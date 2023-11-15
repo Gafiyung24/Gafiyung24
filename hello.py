@@ -87,4 +87,5 @@ def not_starting_zero(m):
 
     # if we get here, there weren't any numbers
     return False
+result = not_starting_zero(x)
 print(f"{test_string}: {result}")
