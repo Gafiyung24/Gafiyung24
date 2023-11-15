@@ -76,7 +76,7 @@ test_string = "ca500"
 result = first_num_zero(test_string)
 print(f"{test_string}: {result}")'''
 
-x = "CS500.        "
+"""x = "CS500"
 def not_starting_zero(m):
     for char in m:
         if char.isdigit() == True:
@@ -88,4 +88,22 @@ def not_starting_zero(m):
     # if we get here, there weren't any numbers
     return False
 result = not_starting_zero(x)
-print(f"{x}: {result}")
+print(f"{x}: {result}")"""
+
+def is_first_digit_zero(input_string):
+    cleaned_string = input_string.lstrip()
+
+    if cleaned_string and cleaned_string[0] == '0' and (len(cleaned_string) == 1 or cleaned_string[1].isdigit()):
+        return True
+    else:
+        return False
+
+# Test the function
+test_string1 = "cs05"
+test_string2 = "cs500"
+
+result1 = is_first_digit_zero(test_string1)
+result2 = is_first_digit_zero(test_string2)
+
+print(f"{test_string1}: {result1}")
+print(f"{test_string2}: {result2}")
