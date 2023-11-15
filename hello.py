@@ -92,10 +92,11 @@ print(f"{x}: {result}")"""
 
 
 
- s = "cs500"
-print(first_num_zero(s))
+ x = "cs500"
+print(first_num_zero(x))
+
 def first_num_zero(s):
-    l = s.find("0'")
+    l = s.find("0")
     for i, c in enumerate(s):
         if s[l-1].isalpha():
             return False
