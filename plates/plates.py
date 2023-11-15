@@ -61,12 +61,10 @@ def check_all_alpha(s):
 
 def first_num_zero(s):
     if s.isalnum():
-        r = s[2:]
-        if r[0] == 0:
-            t = True
-        elif r[0] != 0:
-            t = False
-    return t
+        for char in s:
+            if char == "0":
+                return True
+            return False
 
 main()
 
