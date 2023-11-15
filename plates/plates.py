@@ -45,11 +45,13 @@ def check_last(s):
         return False
 
 def check_alnum(s):
+    #check if all digits are alphabets
     if s.isalnum() is True:
         return True
     return True
 
 def check_all_alpha(s):
+    #check if all digits are alphabets
     if s.isalpha():
         p = True
     else:
@@ -57,6 +59,7 @@ def check_all_alpha(s):
     return p
 
 def first_num_zero(s):
+    #check if first number is zero
     l = s.find("0")
     for i, c in enumerate(s):
         if s[l-1].isalpha():
