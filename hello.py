@@ -108,5 +108,6 @@ result2 = is_first_digit_zero(test_string2)
 print(f"{test_string1}: {result1}")
 print(f"{test_string2}: {result2}")
 
-def first_num_zero():
+def first_num_zero(s):
     
+
