@@ -106,3 +106,5 @@ def first_num_zero(s):
             return False
     return True
 main()
+
+
