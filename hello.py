@@ -76,7 +76,7 @@ test_string = "ca500"
 result = first_num_zero(test_string)
 print(f"{test_string}: {result}")'''
 
-x = "J02"
+x = "CS500.        "
 def not_starting_zero(m):
     for char in m:
         if char.isdigit() == True:
@@ -88,4 +88,4 @@ def not_starting_zero(m):
     # if we get here, there weren't any numbers
     return False
 result = not_starting_zero(x)
-print(f"{test_string}: {result}")
+print(f"{x}: {result}")
