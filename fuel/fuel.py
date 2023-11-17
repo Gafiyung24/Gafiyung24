@@ -1,9 +1,11 @@
 def main():
     l = get_level() * 100
+
     if l <= 1:
         print("E")
     elif l >= 99:
         print("F")
+    elif 
     else:
         get_level()
 
