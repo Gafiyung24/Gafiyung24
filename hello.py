@@ -8,10 +8,11 @@ def main():
 
 def print_column(height):
     for _ in range(height):
-        print("#" * 3)
+        print("#" * 3)"""
 
 
-
+x/y = input("Fraction: ")
+print(x/y)
 
 
 
