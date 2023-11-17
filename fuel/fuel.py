@@ -3,7 +3,7 @@ def main():
 
     if l <= 1:
         print("E")
-    elif l >= 99:
+    elif 99 <= l <= 100:
         print("F")
     elif 1 < l < 99:
         print(f"{int(l)}%")
