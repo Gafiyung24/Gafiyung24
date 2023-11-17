@@ -6,7 +6,7 @@ def main():
     elif 99 <= l <= 100:
         print("F")
     elif 1 < l < 99:
-        print(f"{int(l)}%")
+        print(f"{round(l)}%")
     else:
         get_level()
 
