@@ -6,6 +6,8 @@ def main():
 
 
     def get_level():
-        while
+        while True:
+            x = input("Fraction: ")
+
 main()
 
