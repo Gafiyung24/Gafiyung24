@@ -10,13 +10,16 @@ def print_column(height):
     for _ in range(height):
         print("#" * 3)"""
 
+def main():
+    g = input("fraction: ").split("/")
+    print(f"{divide(g)}")
 
-print(f"{input("fraction: ").split("/")}")
 
-def divide(x1, x2):
-    x= [x1, x2]
+def divide(x):
+    x = [x1, x2]
     x_d = x[0] / x[1]
-    
+    return x_d
+main()
 
 
 
