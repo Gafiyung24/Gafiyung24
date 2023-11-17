@@ -13,6 +13,11 @@ def print_column(height):
 
 print(f"{input("fraction: ").split("/")}")
 
+def divide(x1, x2):
+    x= [x1, x2]
+    x_d = x[0] / x[1]
+    
+
 
 
 
