@@ -11,8 +11,7 @@ def print_column(height):
         print("#" * 3)"""
 
 
-x/y = input("Fraction: ")
-print(x/y)
+
 
 
 
