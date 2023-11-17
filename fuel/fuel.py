@@ -6,7 +6,7 @@ def main():
     elif l >= 99:
         print("F")
     elif 1 < l < 99:
-        print(f"{l}%")
+        print(f"{int(l)}%")
     else:
         get_level()
 
