@@ -5,7 +5,8 @@ def main():
         print("E")
     elif l >= 99:
         print("F")
-    elif 
+    elif 1 < l < 99:
+        print(f"{l}%")
     else:
         get_level()
 
