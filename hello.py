@@ -16,7 +16,6 @@ def main():
 
 
 def divide(x):
-    x = [x1, x2]
     x_d = x[0] / x[1]
     return x_d
 main()
