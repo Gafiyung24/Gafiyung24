@@ -11,7 +11,7 @@ def print_column(height):
         print("#" * 3)"""
 
 
-print(f"{int(input("fraction: ")}")
+print(f"{int(input("fraction: "))}")
 
 
 
