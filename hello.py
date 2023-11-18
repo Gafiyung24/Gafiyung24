@@ -34,4 +34,4 @@ menu_t = {
     "Tortilla Salad": 8.00
 }
 
-print(get("Baja Taco")[menu_t])
+
