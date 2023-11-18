@@ -21,7 +21,8 @@ def get_order(menu):
     items = []
     while True:
         try:
-            items.append(get(input("Item: ").capitalize()[menu]))
+            items = items.append(get(input("Item: ").capitalize()[menu]))
+        except 
 
 
 
