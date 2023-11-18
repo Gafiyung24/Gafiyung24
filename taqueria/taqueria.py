@@ -9,11 +9,8 @@ def main():
     "Super Quesadilla": 9.50,
     "Taco": 3.00,
     "Tortilla Salad": 8.00
-}
-
-
-
-
+    }
+    
 
 
 
@@ -27,7 +24,8 @@ def get_order(menu): #function to get user input and handle errors
         except(EOFError, KeyError):
             pass
 def total(items):
-    
+    t = sum(items)
+
 
 
 
