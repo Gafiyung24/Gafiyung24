@@ -1,5 +1,5 @@
 def main():
-    menu = {
+    menu_t = {
     "Baja Taco": 4.25,
     "Burrito": 7.50,
     "Bowl": 8.50,
@@ -18,4 +18,12 @@ def main():
 
 
 def get_order(menu):
+    items = []
+    while True:
+        try:
+            items.append(get)
+
+
+
+main()
 
