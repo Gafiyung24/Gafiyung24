@@ -21,11 +21,11 @@ def get_order(menu): #function to get user input and handle errors
     items = []
     while True:
         try:
-            items.append(menu.get(input("Items: ")))
+            items.append(menu.get(input("Items: ").capitalize()))
 
 
-        except(EOFError, KeyError):
-            pass
+except(EOFError, KeyError):
+pass
 
 
 
