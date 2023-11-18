@@ -25,6 +25,7 @@ def get_order(menu): #function to get user input and handle errors
             pass
 
         except EOFError:
+            '\n'
             return items
 
 def total(items): #function to get total of items picked
