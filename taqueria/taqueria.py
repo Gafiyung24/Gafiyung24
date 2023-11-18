@@ -29,6 +29,7 @@ def get_order(menu): #function to get user input and handle errors
 
 def total(items): #function to get total of items picked
     t = sum(items)
+    return t
 
 
 
