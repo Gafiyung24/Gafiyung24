@@ -20,8 +20,12 @@ def get_order(menu): #function to get user input and handle errors
     while True:
         try:
             items.append(menu.get(input("Items: ").capitalize()))
-        except(EOFError, KeyError):
-            break
+
+        except KeyError:
+            pass
+
+        except EOFError:
+            return 
 
 def total(items): #function to get total of items picked
     t = sum(items)
