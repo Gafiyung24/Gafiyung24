@@ -11,7 +11,7 @@ def main():
     "Tortilla Salad": 8.00
 }
 
-    print(get_order(menu_t))
+    
 
 
 
@@ -24,8 +24,8 @@ def get_order(menu): #function to get user input and handle errors
             items.append(menu.get(input("Items: ").capitalize()))
 
 
-except(EOFError, KeyError):
-pass
+        except(EOFError, KeyError):
+            pass
 
 
 
