@@ -21,7 +21,7 @@ def get_order(menu): #function to get user input and handle errors
         try:
             items.append(menu.get(input("Items: ").capitalize()))
         except(EOFError, KeyError):
-            pass
+            break
 
 def total(items): #function to get total of items picked
     t = sum(items)
