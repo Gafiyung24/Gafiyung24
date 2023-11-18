@@ -22,7 +22,7 @@ main()"""
 
 
 
-menu_t = {
+"""menu_t = {
     "Baja Taco": 4.25,
     "Burrito": 7.50,
     "Bowl": 8.50,
@@ -32,6 +32,12 @@ menu_t = {
     "Super Quesadilla": 9.50,
     "Taco": 3.00,
     "Tortilla Salad": 8.00
-}
+}"""
+original_string = "super burrito"
+
+capitalized_string = original_string.title()
+
+print(capitalized_string)
+
 
 
