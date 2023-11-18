@@ -27,7 +27,7 @@ def get_order(menu): #function to get user input and handle errors
         except(EOFError, KeyError):
             pass
 def total(items):
-    for i in 
+    total = sum(items)
 
 
 main()
