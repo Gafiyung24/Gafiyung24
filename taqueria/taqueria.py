@@ -11,7 +11,7 @@ def main():
     "Tortilla Salad": 8.00
 }
 
-
+    print(get_order(menu_t))
 
 
 
