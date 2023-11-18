@@ -17,7 +17,7 @@ def main():
 
 
 
-def get_order(menu):
+def get_order(menu): #function to get user input and handle errors
     items = []
     while True:
         try:
