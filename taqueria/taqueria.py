@@ -16,7 +16,7 @@ def main():
 
 
 def get_order(menu): #function to get user input and handle errors
-    items = []
+    items = [0]
     while True:
         try:
             items.append(menu.get(input("Items: ").title()))
