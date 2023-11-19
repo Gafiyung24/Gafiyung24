@@ -18,7 +18,7 @@ def get_order(menu): #function to get user input and handle errors
     items = []
     while True:
         try:
-            items.append(menu[input("Items: ").title()]))
+            items = menu[input("Items: ").title()]))
 
         except KeyError:
             pass
