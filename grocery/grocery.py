@@ -1,7 +1,10 @@
 def main():
     d_list = {}
-    for item in list():
-        
+    user_input = list()
+    for item in user_input:
+        counter = d_list.get(item, 0)
+        d_list[item] = counter + 1
+
 
 
 
