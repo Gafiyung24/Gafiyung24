@@ -1,5 +1,8 @@
 def main():
-    
+    d_list = {}
+    for item in list():
+        
+
 
 
 def list():#fuction to get userinput and append to list
