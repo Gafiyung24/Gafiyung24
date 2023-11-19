@@ -14,7 +14,6 @@ def main():
     print('\n'f"Total: ${total_price}")
 
 
-
 def get_order(menu): #function to get user input and handle errors
     items = [0]
     while True:
@@ -30,9 +29,6 @@ def get_order(menu): #function to get user input and handle errors
 def total(items): #function to get total of items picked
     t = sum(items)
     return t
-
-
-
 
 main()
 
