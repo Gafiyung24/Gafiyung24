@@ -5,6 +5,8 @@ def main():
         counter = d_list.get(item, 0)
         d_list[item] = counter + 1
 
+    
+
 
 
 
