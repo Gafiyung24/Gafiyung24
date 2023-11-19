@@ -22,7 +22,7 @@ def get_order(menu): #function to get user input and handle errors
 
 
         except KeyError:
-            pass
+            break
 
         except EOFError:
             break
