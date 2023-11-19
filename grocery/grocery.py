@@ -1,7 +1,7 @@
 def main():
 
 
-def list():
+def list():#fuction to get userinput and append to list
 
     my_list = []
     while True:
