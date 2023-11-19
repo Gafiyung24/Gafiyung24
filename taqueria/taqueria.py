@@ -11,7 +11,7 @@ def main():
     "Tortilla Salad": 8.00
     }
 
-    print('\n'f"Total: ${get_order(menu_t):.2f}")
+    get_order(menu_t)
 
 
 def get_order(menu): #function to get user input and handle errors
@@ -27,7 +27,7 @@ def get_order(menu): #function to get user input and handle errors
         except EOFError:
             break
         else:
-            print('\n'f"Total: $)
+            print('\n'f"Total: ${total(items):.2f}")
 
 
 def total(items): #function to get total of items picked
