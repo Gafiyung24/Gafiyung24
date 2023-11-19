@@ -11,7 +11,7 @@ def main():
     "Tortilla Salad": 8.00
     }
     total_price = total(get_order(menu_t))
-    print(f"Total: ${total_price:.2f}")
+    print('\n'Total: ${total_price:.2f}")
 
 
 def get_order(menu): #function to get user input and handle errors
@@ -19,7 +19,7 @@ def get_order(menu): #function to get user input and handle errors
     while True:
         try:
             items.append(menu.get(input("Items: ").title()))
-            
+
 
         except KeyError:
             pass
