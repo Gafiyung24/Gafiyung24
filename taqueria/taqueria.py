@@ -21,7 +21,7 @@ def get_order(menu): #function to get user input and handle errors
             items.append(menu[input("Items: ").title()])
 
         except KeyError:
-            break
+            pass
 
         except EOFError:
             break
