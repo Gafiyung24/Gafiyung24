@@ -7,7 +7,7 @@ def main():
 
     for k, v in d_list.items():
         print(f"{v} {k}")
-        
+
 
 
 
@@ -21,7 +21,7 @@ def list():#fuction to get userinput and append to list
         except KeyError:
             pass
         except EOFError:
-            return my_list.sort()
+            return my_list
 
 
 
