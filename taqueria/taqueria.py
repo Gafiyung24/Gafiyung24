@@ -10,8 +10,8 @@ def main():
     "Taco": 3.00,
     "Tortilla Salad": 8.00
     }
-    get_order(menu_t)
-    print('\n'f"Total: ${total_price:.2f}")
+
+    print('\n'f"Total: ${get_order(menu_t):.2f}")
 
 
 def get_order(menu): #function to get user input and handle errors
