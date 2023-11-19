@@ -1,5 +1,5 @@
 def main():
-    d_list = {}
+   d_list = {}
     user_input = list()
     for item in user_input:
         counter = d_list.get(item, 0)
