@@ -5,7 +5,9 @@ def main():
         counter = d_list.get(item, 0)
         d_list[item] = counter + 1
 
-    for k, v in 
+    for k, v in d_list.items():
+        print(f"{v} {k}")
+        
 
 
 
