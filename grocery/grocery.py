@@ -1,6 +1,6 @@
 def main():
     d_list = {}
-    user_input = list()
+    user_input = list().sort()
     for item in user_input:
         counter = d_list.get(item, 0)
         d_list[item] = counter + 1
