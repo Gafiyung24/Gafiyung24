@@ -33,11 +33,28 @@ main()"""
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }"""
-original_string = "super burrito"
+sentences = [
+    'This is the first sentence.',
+    'The second sentence is here.',
+    'And this is the third sentence.'
+]
 
-capitalized_string = original_string.title()
+# Initialize an empty dictionary to store counts
+word_counts = {}
 
-print(capitalized_string)
+# Count word repetitions in the list
+for sentence in sentences:
+    words = sentence.split()
+    for word in words:
+        # Use the get() method to get the current count or default to 0
+        current_count = word_counts.get(word, 0)
+
+        # Increment the count
+        word_counts[word] = current_count + 1
+
+# Display the counts
+for word, count in word_counts.items():
+    print(f"{word}: {count} times")
 
 
 
