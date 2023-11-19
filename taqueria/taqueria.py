@@ -11,7 +11,7 @@ def main():
     "Tortilla Salad": 8.00
     }
     total_price = total(get_order(menu_t))
-    print('\n'Total: ${total_price:.2f}")
+    print('\n'f"Total: ${total_price:.2f}")
 
 
 def get_order(menu): #function to get user input and handle errors
