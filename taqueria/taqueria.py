@@ -20,7 +20,6 @@ def get_order(menu): #function to get user input and handle errors
         try:
             items.append(menu.get(input("Items: ").title()))
 
-
         except KeyError:
             break
 
