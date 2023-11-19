@@ -19,14 +19,13 @@ def get_order(menu): #function to get user input and handle errors
     while True:
         try:
             items.append(menu.get(input("Items: ").title()))
-            
 
 
         except KeyError:
             pass
 
         except EOFError:
-            return items
+            return total_price = total
 
 def total(items): #function to get total of items picked
     t = sum(items)
