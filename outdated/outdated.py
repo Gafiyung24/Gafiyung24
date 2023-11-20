@@ -77,6 +77,7 @@ for i in months_ab:
             print(f"{year}-{m+1:02}-{d:02}")
     #break
 for i in month_n:
+    month = int(month)
     if month == i:
         try:
             m = month_n.index(month)
