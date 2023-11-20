@@ -30,6 +30,7 @@ def convert_date():
     "Dec"
     ]
     month_n = range(12)
+    days_m = range(31)
     
 main()
 
