@@ -56,47 +56,46 @@ while True:
         day = user_input[0]
         month = user_input[1]
         year = user_input[2]
-        for i in months_a:
-            if month in months_a:#checking if month was fully spelt
-                day = int(day)
-                try:
-                    d = days_m.index(day)
-                    m = months_a.index(month)
-                except ValueError:
-                    pass
-                else:#printin out date
-                    print(f"{year}-{m+1:02}-{d:02}")
-                    break
-
-
-        for i in months_ab:
-            if month in months_ab:#checking if month wasn't fully spelt
-                day = int(day)
-                try:
-                    d = days_m.index(day)
-                    m = months_ab.index(month)
-                except ValueError:
-                    pass
-                else:#printin out date
-                    print(f"{year}-{m+1:02}-{d:02}")
-                    break
-
-
-        if month.isnumeric() and day.isnumeric():
-            month = int(month)
+    for i in months_a:
+        if month in months_a:#checking if month was fully spelt
             day = int(day)
-            '''for i in month_n:
-                if month == i:'''
             try:
-                m = month_n.index(month)
                 d = days_m.index(day)
+                m = months_a.index(month)
             except ValueError:
                 pass
-            else:
-                print(f"{year}-{m:02}-{d:02}")
+            else:#printin out date
+                print(f"{year}-{m+1:02}-{d:02}")
                 break
-    else:
-        break
+
+
+
+    for i in months_ab:
+        if month in months_ab:#checking if month wasn't fully spelt
+            day = int(day)
+            try:
+                d = days_m.index(day)
+                m = months_ab.index(month)
+            except ValueError:
+                pass
+            else:#printin out date
+                print(f"{year}-{m+1:02}-{d:02}")
+                break
+
+
+    if month.isnumeric() and day.isnumeric():
+        month = int(month)
+        day = int(day)
+        '''for i in month_n:
+            if month == i:'''
+        try:
+            m = month_n.index(month)
+            d = days_m.index(day)
+        except ValueError:
+            pass
+        else:
+            print(f"{year}-{m:02}-{d:02}")
+            break
 
 
 
