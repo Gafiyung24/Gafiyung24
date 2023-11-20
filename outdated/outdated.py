@@ -77,7 +77,7 @@ for i in months_ab:
             print(f"{year}-{m+1:02}-{d:02}")
     #break
 for i in month_n:
-    if month is month_n[i]:
+    if month is i:
         try:
             m = month_n.index(month)
             d = days_m.index(day)
