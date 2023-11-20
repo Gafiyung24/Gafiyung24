@@ -56,7 +56,8 @@ def convert_date():
             day = user_input[0]
             monnth = user_input[1]
             year = user_input[2]
-    
+        if month in months_a:
+            try day
 
 
 
