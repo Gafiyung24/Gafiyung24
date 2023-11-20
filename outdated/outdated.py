@@ -43,7 +43,7 @@ while True:
         user_input = user_input.split(", ")
         u1 = user_input[0].split(" ")[0]
         u2 = user_input[0].split(" ")[1]
-        year = user_input[2]
+        year = user_input[1]
         if u1.isnumeric():
             day = u1
             month = u2
