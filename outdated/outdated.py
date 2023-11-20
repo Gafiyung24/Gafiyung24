@@ -39,7 +39,7 @@ def convert_date():
             month = user_input[0]
             day = user_input[1]
             year = user_input[2]
-        elif user_input.find(","):#handling dates with 
+        elif user_input.find(","):#handling dates with month spellings
             user_input = user_input.split(", ")
             month = user_input[0].split(" ")[0]
             day = user_input[0].split(" ")[1]
