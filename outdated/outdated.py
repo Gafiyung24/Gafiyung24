@@ -51,7 +51,7 @@ def convert_date():
             month = u1
             day = u2
 
-    elif:#handling dates with months spelling without comma
+    elif user_input.find(" "):#handling dates with months spelling without comma
         user_input = user_input.split(" ")
         day = user_input[0]
         month = user_input[1]
