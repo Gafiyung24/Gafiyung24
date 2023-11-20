@@ -78,6 +78,7 @@ while True:
             else:#printin out date
                 print(f"{year}-{m+1:02}-{d:02}")
         break
+
     for i in month_n:
         month = int(month)
         day = int(day)
