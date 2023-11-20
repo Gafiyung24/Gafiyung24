@@ -56,14 +56,23 @@ def convert_date():
             day = user_input[0]
             month = user_input[1]
             year = user_input[2]
-        if month in months_a:
+        if month in months_a:#checking if month was sully spelt
             try:
                 d = days_m.index(day)
                 m = months_a.index(month)
             except ValueError:
                 pass
-            else:
-                print(f")
+            else:#printin out date
+                print(f"{year}-{m:02}-{d:02}")
+        if month in month_ab:
+            try:
+                d = days_m.index(day)
+                m = months_a.index(month)
+            except ValueError:
+                pass
+            else:#printin out date
+                print(f"{year}-{m:02}-{d:02}")
+
 
 
 
