@@ -80,7 +80,7 @@ while True:
                 else:#printin out date
                     print(f"{year}-{m+1:02}-{d:02}")
                     break
-
+        
 
         if month.isnumeric() and day.isnumeric():
             month = int(month)
