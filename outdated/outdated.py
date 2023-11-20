@@ -1,7 +1,7 @@
-def main()
+def main():
     convert_date()
 
-def convert_date()
+def convert_date():
     months_a = [
     "January",
     "February",
@@ -66,8 +66,7 @@ def convert_date()
                 except ValueError:
                     pass
                 else:#printin out date
-                    print(f"{year}-{m+1:02}-{d:02}")
-                    break
+                    return year, m+1, d
 
 
 
@@ -80,8 +79,7 @@ def convert_date()
                 except ValueError:
                     pass
                 else:#printin out date
-                    print(f"{year}-{m+1:02}-{d:02}")
-                    break
+                    return year, m+1, d
 
 
         if month.isnumeric() and day.isnumeric():
