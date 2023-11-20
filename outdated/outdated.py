@@ -36,13 +36,12 @@ def convert_date():
     days_m = range(31)
     """while True:"""
     user_input = input("Date: ") #taking user's date input
-    p = user_input.find('/')
-    if p.is:#handling dates in the format 8/9/1996
+    if user_input.find("/") != -1:#handling dates in the format 8/9/1996
         user_input = user_input.split("/")
         month = user_input[0]
         day = user_input[1]
         year = user_input[2]
-    elif user_input.find(",").isnumeric():#handling dates with month spellings and comma
+    elif user_input.find(",") != -1:#handling dates with month spellings and comma
         user_input = user_input.split(", ")
         u1 = user_input[0].split(" ")[0]
         u2 = user_input[0].split(" ")[1]
@@ -54,7 +53,7 @@ def convert_date():
             month = u1
             day = u2
 
-    elif user_input.find(" "):#handling dates with months spelling without comma
+    elif user_input.find(" ") != -1:#handling dates with months spelling without comma
         user_input = user_input.split(" ")
         day = user_input[0]
         month = user_input[1]
