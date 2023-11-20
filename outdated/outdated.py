@@ -39,7 +39,7 @@ def convert_date():
             month = user_input[0]
             day = user_input[1]
             year = user_input[2]
-        elif user_input.find(","):#handling dates with month spellings
+        elif user_input.find(","):#handling dates with month spellings and comma
             user_input = user_input.split(", ")
             u1 = user_input[0].split(" ")[0]
             u2 = user_input[0].split(" ")[1]
@@ -51,7 +51,7 @@ def convert_date():
                 month = u1
                 day = u2
 
-        else:
+        else:#handling dates with months spelling without comma
             user_input = user_input.split(" ")
             day = user_input[0]
             month = user_input[1]
@@ -59,6 +59,7 @@ def convert_date():
         if month in months_a:
             try:
                 
+
 
 
 
