@@ -51,12 +51,12 @@ def convert_date():
             month = u1
             day = u2
 
-    else:#handling dates with months spelling without comma
+    elif:#handling dates with months spelling without comma
         user_input = user_input.split(" ")
         day = user_input[0]
         month = user_input[1]
         year = user_input[2]
-    if month in months_a:#checking if month was fully spelt
+    elif month in months_a:#checking if month was fully spelt
         try:
             d = days_m.index(day)
             m = months_a.index(month)
