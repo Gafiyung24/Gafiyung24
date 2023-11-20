@@ -65,10 +65,9 @@ while True:
             except ValueError:
                 pass
             else:#printin out date
-                
-            print(f"{year}-{m+1:02}-{d:02}")
+                print(f"{year}-{m+1:02}-{d:02}")
+                break
 
-            break
 
     for i in months_ab:
         if month in months_ab:#checking if month wasn't fully spelt
@@ -81,7 +80,6 @@ while True:
             else:#printin out date
                 print(f"{year}-{m+1:02}-{d:02}")
                 break
-        break
 
 
     if month.isnumeric() and day.isnumeric():
