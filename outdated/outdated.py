@@ -67,6 +67,7 @@ while True:
             else:#printin out date
                 print(f"{year}-{m+1:02}-{d:02}")
                 break
+
             break
 
     for i in months_ab:
