@@ -1,5 +1,6 @@
 def main():
-    convert_date()
+    a, b, c = convert_date()
+    print(f"{a}-{b:02}-{c:02}")
 
 def convert_date():
     months_a = [
