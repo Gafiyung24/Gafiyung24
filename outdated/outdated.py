@@ -50,12 +50,13 @@ def convert_date():
             else:
                 month = u1
                 day = u2
-            
+
         else:
             user_input = user_input.split(" ")
             day = user_input[0]
             monnth = user_input[1]
             year = user_input[2]
+    
 
 
 
