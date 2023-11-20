@@ -66,8 +66,9 @@ while True:
                 pass
             else:#printin out date
                 print(f"{year}-{m+1:02}-{d:02}")
-                break
+            break
         break
+
     for i in months_ab:
         if month in months_ab:#checking if month wasn't fully spelt
             day = int(day)
@@ -78,7 +79,7 @@ while True:
                 pass
             else:#printin out date
                 print(f"{year}-{m+1:02}-{d:02}")
-                break
+            break
         break
 
 
