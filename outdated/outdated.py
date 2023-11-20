@@ -41,7 +41,9 @@ def convert_date():
             year = user_input[2]
         elif user_input.find(","):
             user_input = user_input.split(", ")
-            month = user_input
+            month = user_input[0].split(" ")[0]
+            days = user_input[0].split(" ")[1]
+            
 
 
 main()
