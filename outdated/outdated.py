@@ -1,4 +1,4 @@
-def main():
+
 
 
     months_a = [
@@ -92,5 +92,5 @@ def main():
 
 
 
-main()
+
 
