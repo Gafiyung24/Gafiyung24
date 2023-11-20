@@ -32,7 +32,7 @@ main()"""
     "Super Quesadilla": 9.50,
     "Taco": 3.00,
     "Tortilla Salad": 8.00
-}"""
+}
 sentences = [
     'This is the first sentence.',
     'The second sentence is here.',
@@ -55,6 +55,9 @@ for sentence in sentences:
 # Display the counts
 for word, count in word_counts.items():
     print(f"{word}: {count} times")
+"""
+days = [range(31)]
+print(days)
 
 
 
