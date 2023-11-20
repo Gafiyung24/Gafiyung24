@@ -1,8 +1,6 @@
 def main():
-    convert_date()
 
 
-def convert_date():
     months_a = [
     "January",
     "February",
