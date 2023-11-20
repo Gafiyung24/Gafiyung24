@@ -53,8 +53,8 @@ while True:
 
     elif user_input.find(" ") != -1:#handling dates with months spelling without comma
         user_input = user_input.split(" ")
-        day = user_input[0]
-        month = user_input[1]
+        day = user_input[1]
+        month = user_input[0]
         year = user_input[2]
     for i in months_a:
         if month in months_a:#checking if month was fully spelt
