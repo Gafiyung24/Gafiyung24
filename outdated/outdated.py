@@ -79,10 +79,11 @@ while True:
                 print(f"{year}-{m+1:02}-{d:02}")
         break
 
-    for i in month_n:
-        if month.isnumeric():
-            month = int(month)
-            day = int(day)
+
+    if month.isnumeric():
+        month = int(month)
+        day = int(day)
+        for i in month_n:
             if month == i:
                 try:
                     m = month_n.index(month)
