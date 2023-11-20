@@ -83,15 +83,15 @@ while True:
     if month.isnumeric():
         month = int(month)
         day = int(day)
-        for i in month_n:
-            if month == i:
-                try:
-                    m = month_n.index(month)
-                    d = days_m.index(day)
-                except ValueError:
-                    pass
-                else:
-                    print(f"{year}-{m:02}-{d:02}")
+        '''for i in month_n:
+            if month == i:'''
+        try:
+            m = month_n.index(month)
+            d = days_m.index(day)
+        except ValueError:
+            pass
+        else:
+            print(f"{year}-{m:02}-{d:02}")
     break
 
 
