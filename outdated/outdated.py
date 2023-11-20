@@ -64,7 +64,7 @@ for i in months_a:
         except ValueError:
             pass
         else:#printin out date
-        print(f"{year}-{m+1:02}-{d:02}")
+            print(f"{year}-{m+1:02}-{d:02}")
     #break
 for i in months_ab:
     if month in months_ab:#checking if month wasn't fully spelt
@@ -74,16 +74,17 @@ for i in months_ab:
         except ValueError:
             pass
         else:#printin out date
-        print(f"{year}-{m+1:02}-{d:02}")
+            print(f"{year}-{m+1:02}-{d:02}")
     #break
-elif month in month_n:
-    try:
-        m = month_n.index(month)
-        d = days_m.index(day)
-    except ValueError:
-        pass
-    else:
-        print(f"{year}-{m:02}-{d:02}")
+for i in len(month_n):
+    if month is month_n[i]:
+        try:
+            m = month_n.index(month)
+            d = days_m.index(day)
+        except ValueError:
+            pass
+        else:
+            print(f"{year}-{m:02}-{d:02}")
     #break
 
 
