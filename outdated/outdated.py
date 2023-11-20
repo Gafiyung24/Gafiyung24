@@ -89,7 +89,7 @@ while True:
                 pass
             else:
                 print(f"{year}-{m:02}-{d:02}")
-        #break
+    break
 
 
 
