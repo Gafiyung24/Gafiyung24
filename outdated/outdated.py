@@ -41,15 +41,22 @@ def convert_date():
             year = user_input[2]
         elif user_input.find(","):#handling dates with month spellings
             user_input = user_input.split(", ")
-            month = user_input[0].split(" ")[0]
-            day = user_input[0].split(" ")[1]
+            u1 = user_input[0].split(" ")[0]
+            u2 = user_input[0].split(" ")[1]
             year = user_input[2]
+            if u1.isnumeric():
+                day = u1
+                month = u2
+            else:
+                month = u1
+                day = u2
+            
         else:
             user_input = user_input.split(" ")
             day = user_input[0]
             monnth = user_input[1]
             year = user_input[2]
-        
+
 
 
 main()
