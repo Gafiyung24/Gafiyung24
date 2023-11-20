@@ -31,6 +31,15 @@ def convert_date():
     ]
     month_n = range(12)
     days_m = range(31)
-    
+    while True:
+        user_input = input("Date: ")
+        if user_input.find("/"):
+            user_input.split("/")
+            user_input[0] = month
+            user_input[1] = day
+            user_input[2] = year
+        elif user_input.find(","):
+            user_input.split(", ")
+            
 main()
 
