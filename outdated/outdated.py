@@ -65,7 +65,7 @@ while True:
             except ValueError:
                 pass
             else:#printin out date
-                break
+                
             print(f"{year}-{m+1:02}-{d:02}")
 
             break
