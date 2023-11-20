@@ -88,7 +88,8 @@ for i in month_n:
         except ValueError:
             pass
         else:
-            print(f"{year}-{m:02}-{d:02}")
+            break
+    print(f"{year}-{m:02}-{d:02}")
     #break
 
 
