@@ -64,6 +64,7 @@ def convert_date():
                 pass
             else:#printin out date
                 print(f"{year}-{m+1:02}-{d:02}")
+                break
         elif month in months_ab:#checking if month wasn't fully spelt
             try:
                 d = days_m.index(day)
@@ -72,9 +73,17 @@ def convert_date():
                 pass
             else:#printin out date
                 print(f"{year}-{m+1:02}-{d:02}")
+                break
         elif month in month_n:
             try:
                 m = month_n.index(month)
+                d = days_m.index(day)
+            except ValueError:
+                pass
+            else:
+                print(f"{year}-{m:02}-{d:02}")
+                break
+
 
 
 
