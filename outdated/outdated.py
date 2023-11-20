@@ -56,16 +56,18 @@ elif user_input.find(" ") != -1:#handling dates with months spelling without com
     day = user_input[0]
     month = user_input[1]
     year = user_input[2]
-elif month in months_a:#checking if month was fully spelt
-    try:
-        d = days_m.index(day)
-        m = months_a.index(month)
-    except ValueError:
-        pass
+for i in months_a:
+    if month in months_a:#checking if month was fully spelt
+        try:
+            d = days_m.index(day)
+            m = months_a.index(month)
+        except ValueError:
+            pass
     else:#printin out date
         print(f"{year}-{m+1:02}-{d:02}")
     #break
-elif month in months_ab:#checking if month wasn't fully spelt
+for i in months_ab:
+    if month in months_ab:#checking if month wasn't fully spelt
     try:
         d = days_m.index(day)
         m = months_ab.index(month)
