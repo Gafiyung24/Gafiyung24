@@ -54,10 +54,11 @@ def convert_date():
         else:
             user_input = user_input.split(" ")
             day = user_input[0]
-            monnth = user_input[1]
+            month = user_input[1]
             year = user_input[2]
         if month in months_a:
-            try day
+            try:
+                
 
 
 
