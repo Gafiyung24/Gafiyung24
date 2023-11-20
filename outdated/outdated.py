@@ -72,7 +72,9 @@ def convert_date():
                 pass
             else:#printin out date
                 print(f"{year}-{m+1:02}-{d:02}")
-        
+        else:
+            try:
+                
 
 
 
