@@ -29,6 +29,7 @@ def convert_date():
     "Nov",
     "Dec"
     ]
-    month_n = rane
+    month_n = range(12)
+    
 main()
 
