@@ -58,7 +58,13 @@ def convert_date():
             year = user_input[2]
         if month in months_a:
             try:
-                
+                d = days_m.index(day)
+                m = months_a.index(month)
+            except ValueError:
+                pass
+            else:
+                print(f")
+
 
 
 
