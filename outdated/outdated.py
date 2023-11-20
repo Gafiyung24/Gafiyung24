@@ -34,7 +34,7 @@ def convert_date():
     while True:
         user_input = input("Date: ") #taking user's date input
         if user_input.find("/"):
-            user_input.split("/")
+            user_input = user_input.split("/")
             user_input[0] = month
             user_input[1] = day
             user_input[2] = year
