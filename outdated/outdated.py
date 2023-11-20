@@ -1,6 +1,7 @@
+def main()
+    convert_date()
 
-
-
+def convert_date()
 months_a = [
 "January",
 "February",
@@ -94,9 +95,9 @@ while True:
         except ValueError:
             pass
         else:
-            print(f"{year}-{m:02}-{d:02}")
-            break
+            return {year}, {m:02}, {d:02}
 
+main()
 
 
 
