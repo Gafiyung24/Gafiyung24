@@ -58,6 +58,7 @@ elif user_input.find(" ") != -1:#handling dates with months spelling without com
     year = user_input[2]
 for i in months_a:
     if month in months_a:#checking if month was fully spelt
+        day = int(day)
         try:
             d = days_m.index(day)
             m = months_a.index(month)
@@ -68,6 +69,7 @@ for i in months_a:
     #break
 for i in months_ab:
     if month in months_ab:#checking if month wasn't fully spelt
+        day = int(day)
         try:
             d = days_m.index(day)
             m = months_ab.index(month)
@@ -78,6 +80,7 @@ for i in months_ab:
     #break
 for i in month_n:
     month = int(month)
+    day = int(day)
     if month == i:
         try:
             m = month_n.index(month)
