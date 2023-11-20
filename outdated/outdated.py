@@ -81,7 +81,7 @@ while True:
         break
 
 
-    if month.isnumeric():
+    if month.isnumeric() and day.isnumeric():
         month = int(month)
         day = int(day)
         '''for i in month_n:
