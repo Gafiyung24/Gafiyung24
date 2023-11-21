@@ -54,7 +54,7 @@ def convert_date():
             u1 = user_input[0].split(" ")[0]
             u2 = user_input[0].split(" ")[1]
             year = user_input[1]
-            if u1.isnumeric():
+            if u1.isnumeric() and u2.isnumeric():
                 day = u1
                 month = u2
             else:
