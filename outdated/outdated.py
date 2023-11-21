@@ -38,9 +38,11 @@ def convert_date():
         user_input = input("Date: ") #taking user's date input
         if user_input.find("/") != -1:#handling dates in the format 8/9/1996
             user_input = user_input.split("/")
-            month = user_input[0]
-            day = user_input[1]
-            year = user_input[2]
+            u1 = user_input[0]
+            u2 = user_input[1]
+            u3 = user_input[2]
+            if u1.isnumeric() and u2.isnumeric():
+                
         elif user_input.find(",") != -1:#handling dates with month spellings and comma
             user_input = user_input.split(", ")
             u1 = user_input[0].split(" ")[0]
