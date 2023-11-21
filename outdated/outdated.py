@@ -42,7 +42,13 @@ def convert_date():
             u2 = user_input[1]
             u3 = user_input[2]
             if u1.isnumeric() and u2.isnumeric():
-                
+                month = u1
+                day = u2
+                year = u3
+            else
+                day = u1
+                month = u2
+                year = u3
         elif user_input.find(",") != -1:#handling dates with month spellings and comma
             user_input = user_input.split(", ")
             u1 = user_input[0].split(" ")[0]
