@@ -45,7 +45,7 @@ def convert_date():
                 month = u1
                 day = u2
                 year = u3
-            else
+            else:
                 day = u1
                 month = u2
                 year = u3
