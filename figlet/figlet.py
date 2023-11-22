@@ -10,4 +10,8 @@ if len(sys.argv) == 1:
     figlet.setFont(font=rf)
     print(figlet.renderText(user_input))
 
-elif "-f
+elif "-f" or "--font" == sys.argv[1]:
+    figlet.setFont(font = sys.argv[2])
+    print(figlet.renderText(user_input))
+else:
+    sys.exit("Invalid")
