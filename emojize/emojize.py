@@ -2,4 +2,4 @@ import emoji
 
 
 user_input = input("")
-print(emoji.emoji)
+print(emoji.emojize(user_input))
