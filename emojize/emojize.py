@@ -1,4 +1,5 @@
 import emoji
 
 
-user_input = emoji.emojize(input(" "))
+user_input = input("")
+print(emoji.emoji)
