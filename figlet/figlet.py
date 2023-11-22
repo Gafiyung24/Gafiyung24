@@ -14,4 +14,4 @@ elif "-f" or "--font" == sys.argv[1]:
     figlet.setFont(font = sys.argv[2])
     print(figlet.renderText(user_input))
 elif "-f" or "--font" != sys.argv[1] and sys.argv[2] not in figlet.getFonts():
-    sys.exit("Invalid")
+    sys.exit("Invalid usage")
