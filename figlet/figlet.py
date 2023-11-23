@@ -17,7 +17,7 @@ elif len(sys.argv) == 3 and sys.argv[1] in [fig_f, fig_font]:
     user_input = input("Input: ")
     figlet.setFont(font = sys.argv[2])
     print(figlet.renderText(user_input))
-elif 2 <= len(sys.argv) <= 3:
+elif len(sys.argv) == 2 or len(sys.argv) == 3:
     try:
         sys.argv[2] in [figlet.getFonts()]
         sys.argv[1] in [fig_f, fig_font]
