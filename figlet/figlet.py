@@ -17,7 +17,7 @@ elif len(sys.argv) == 3:
     try:
         sys.argv[1] in [fig_f, fig_font]
         sys.argv[2] in [figlet.getFonts()]
-    except ValueError:
+    except (ValueError, IndexError):
         sys.exit("Invalid usage")
     else:
         user_input = input("Input: ")
