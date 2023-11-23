@@ -3,6 +3,8 @@ import sys
 import random
 
 figlet = Figlet()
+fig_f = "-f"
+fig_font = "--font"
 
 if len(sys.argv) == 1:
     user_input = input("Input: ")
@@ -11,7 +13,7 @@ if len(sys.argv) == 1:
     figlet.setFont(font=rf)
     print(figlet.renderText(user_input))
 
-elif "-f" or "--font" == sys.argv[1]:
+elif fig_f or fig_font == sys.argv[1]:
     user_input = input("Input: ")
     figlet.setFont(font = sys.argv[2])
     print(figlet.renderText(user_input))
