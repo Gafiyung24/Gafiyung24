@@ -17,9 +17,10 @@ elif len(sys.argv) == 3 and sys.argv[1] in [fig_f, fig_font]:
     user_input = input("Input: ")
     figlet.setFont(font = sys.argv[2])
     print(figlet.renderText(user_input))
-elif len(sys.argv) != 1:
+elif len(sys.argv) == 2:
     try:
-        sys.argv[2] in figlet.getFonts() and sys.argv[1] in [fig_f, fig_font]
+        sys.argv[2] in figlet.getFonts()
+        sys.argv[1] in [fig_f, fig_font]
     except (IndexError,ValueError):
         sys.exit("Invalid usage")
 else:
