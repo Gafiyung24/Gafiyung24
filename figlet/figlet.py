@@ -19,7 +19,7 @@ elif len(sys.argv) == 3:
         figlet.setFont(font = sys.argv[2])
         print(figlet.renderText(user_input))
     else:
-        sys.exit()
+        sys.exit("Invalid usage")
 elif len(sys.argv) == 2:
         sys.exit("Invalid usage")
 else:
