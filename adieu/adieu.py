@@ -6,6 +6,8 @@ while True:
     try:
         mylist.append(input("Name: "))
     except EOFError:
-        print(f"Adieu, adieu, to {p.join(mylist)})
+        print(f"Adieu, adieu, to {p.join(mylist)}")
+        break
     
+
 
