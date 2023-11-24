@@ -5,5 +5,6 @@ mylist = []
 while True:
     try:
         mylist.append(input("Name: "))
-    except EOFError
+    except EOFError:
+        print()
 
