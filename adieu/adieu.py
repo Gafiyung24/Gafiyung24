@@ -1,6 +1,9 @@
 import inflect
 
 p = inflect.engine()
-my_list = []
-
+mylist = []
+while True:
+    try:
+        mylist.append(input("Name: "))
+    except EOFError
 
