@@ -12,13 +12,13 @@ def check():
             if n < 0:
                 raise ValueError
             i = int(input("Guess: "))
-            if i < 0:
+            if i < 0 or i > n:
                 raise ValueError
         except ValueError:
             pass
         else:
             c = random.randint(1, n)
-            return c, i
+            return i, c
 def game(a, b):
     if a < b:
         print("Too small!")
