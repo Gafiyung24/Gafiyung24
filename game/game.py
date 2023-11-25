@@ -2,7 +2,8 @@ import random
 
 
 def main():
-    game(check())
+    l, g = check()
+    game(l, g)
 
 def check():
     while True:
