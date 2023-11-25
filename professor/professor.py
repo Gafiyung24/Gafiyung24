@@ -3,8 +3,12 @@ import random
 
 def main():
     user_input = get_level() #level of calculator
-    i = 0
-    
+    i = 10
+    x = 3
+    while i < 10:
+        X, Y = generate_integer(user_input) #get values of random ints generated
+        X + Y = Z
+
 
 
 
