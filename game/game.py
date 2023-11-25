@@ -2,7 +2,7 @@ import random
 
 
 def main():
-
+    
 def check():
     while True:
         try:
@@ -15,7 +15,13 @@ def check():
         else:
             c = random.choice(1, n)
             return c, i
-
+def game(a, b):
+    if a < b:
+        print("Too small")
+    elif a > b:
+        print("Too large")
+    else:
+        print("Just right")
 
 
 main()
