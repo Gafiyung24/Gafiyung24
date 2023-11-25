@@ -16,7 +16,7 @@ def check():
             pass
         else:
             c = random.choice(1, n)
-            return c, i
+        return c, i
 def game(a, b):
     if a < b:
         print("Too small")
