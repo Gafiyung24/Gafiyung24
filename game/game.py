@@ -10,7 +10,7 @@ def check():
         try:
             n = int(input("level: "))
             i = int(input("Guess: "))
-            if n or i < 0:
+            if n < 0 or i < 0:
                 raise ValueError
         except ValueError:
             pass
