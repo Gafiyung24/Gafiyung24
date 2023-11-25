@@ -2,6 +2,8 @@ import random
 
 
 def main():
+    user_input = get_level()
+    generate_integer(user_input)
 
 
 
