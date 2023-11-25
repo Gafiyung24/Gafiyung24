@@ -2,7 +2,8 @@ import random
 
 
 def main():
-    
+    game(check())
+
 def check():
     while True:
         try:
