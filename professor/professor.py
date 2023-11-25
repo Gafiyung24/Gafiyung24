@@ -7,6 +7,7 @@ def main():
     x = 3
     while i < 10:
         X, Y = generate_integer(user_input) #get values of random ints generated
+        Z = X + Y
         
 
 
