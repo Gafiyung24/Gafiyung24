@@ -2,8 +2,10 @@ import random
 
 
 def main():
-    user_input = get_level()
+    user_input = get_level() #level of calculator
+    i = 0
     
+
 
 
 
