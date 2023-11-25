@@ -14,6 +14,8 @@ def check():
             pass
         else:
             c = random.choice(1, n)
+            return c, i
+
 
 
 main()
