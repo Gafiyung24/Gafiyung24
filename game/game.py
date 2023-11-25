@@ -26,6 +26,8 @@ def game(a, b):
         print("Too large!")
     elif a == b:
         print("Just right!")
+    else:
+        print("nothing")
 
 
 main()
