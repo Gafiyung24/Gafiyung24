@@ -15,7 +15,7 @@ def check():
         except ValueError:
             pass
         else:
-            c = random.choice(1, n)
+            c = random.choice(range(1, n))
         return c, i
 def game(a, b):
     if a < b:
