@@ -18,8 +18,11 @@ def get_level():
 
 
 def generate_integer(level):
-    if level == 1
-    p = rand
+    if level == 1:
+    p = random.randrange(0,9)
+    q = random.randrange(0,9)
+
+    
 
 
 if __name__ == "__main__":
