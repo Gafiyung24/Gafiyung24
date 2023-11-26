@@ -5,21 +5,18 @@ def main():
     user_input = get_level() #level of calculator
     i = 0
 
-    score = 0
+
     while i < 10:# loop to generate 10 questions
         X, Y = generate_integer(user_input) #get values of random ints generated
         Z = X + Y
         print(f"{X} + {Y} = ", end='') #print to terminal
         problem_solver(Z, X, Y)
-
-
-
         i +=1
-    if i == 10:
-        print(score)
+
 
 def problem_solver(Z, X , Y):
      x = 0
+     score = 0
      while x < 3:# check for wrong results and loop 3 times
             try:
                 us_2 = int(input(" "))
@@ -37,7 +34,8 @@ def problem_solver(Z, X , Y):
             else:
                 if Z == us_2:
                     score +=1
-                break
+            return score
+
 
 
 
