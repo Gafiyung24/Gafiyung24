@@ -6,20 +6,13 @@ def main():
     #i = 0
     x = 0
     score = 0
-    for i in range(10):# loop to generate 10 questions
+    while i < 10:# loop to generate 10 questions
         X, Y = generate_integer(user_input) #get values of random ints generated
         Z = X + Y
         print(f"{X} + {Y} = ", end='') #print to terminal
-        while x < 3:# check for wrong results and loop 3 times
-            try:
-                us_2 = int(input(" "))
-                if Z != us_2:
-                    raise ValueError
-            except ValueError:
-                print("EEE")
-                print(f"{X} + {Y} = ", end='')
-                x +=1
-                pass
+        problem_solver(Z)
+
+
                 if x == 3:
                     print(Z)
                     x = 0
@@ -32,7 +25,17 @@ def main():
     if i == 10:
         print(score)
 
-
+def problem_solver(Z):
+     while x < 3:# check for wrong results and loop 3 times
+            try:
+                us_2 = int(input(" "))
+                if Z != us_2:
+                    raise ValueError
+            except ValueError:
+                print("EEE")
+                print(f"{X} + {Y} = ", end='')
+                x +=1
+                pass
 
 
 
