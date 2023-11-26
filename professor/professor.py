@@ -31,9 +31,9 @@ def problem_solver(Z, X , Y):
                 if x == 3:
                     print(Z)
                     x = 0
-                    sys.exit()   #code runs with manual checkng but check50 coming up with errors except I use sys.exit instead of break.
-            else:
-                if Z == us_2:
+                    sys.exit()   #code runs with manual checkng but check50 coming up with errors(unable to generate 10 problems before quiting)
+            else:                 #except I use sys.exit instead of break, which gives only one error(little professor displays number of problems correct)
+                if Z == us_2:     #if by chance anyone checks manually, change sys.exit to break to get desired outputs.
                     score +=1
 
     return score
