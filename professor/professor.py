@@ -21,7 +21,7 @@ def main():
                 x +=1
                 if x == 3:
                     print(Z)
-                    break
+                    x = 0
                 pass
             else:
                 if Z == us_2:
