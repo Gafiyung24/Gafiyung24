@@ -8,7 +8,7 @@ def main():
     while i < 10:
         X, Y = generate_integer(user_input) #get values of random ints generated
         Z = X + Y
-        print(f"{X} + {Y} = " end='') #print to terminal
+        print(X "+" Y "= " end='') #print to terminal
         try:
             us_2 = int(input(" "))
             if Z != us_2:
