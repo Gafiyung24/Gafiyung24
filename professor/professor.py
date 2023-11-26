@@ -22,7 +22,7 @@ def main():
             else:
                 break
         i +=1
-        score +=1
+    score +=1
     print(score)
 
 
