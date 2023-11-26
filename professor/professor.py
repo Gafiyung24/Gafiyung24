@@ -1,5 +1,5 @@
 import random
-
+import sys
 
 def main():
     user_input = get_level() #level of calculator
@@ -23,7 +23,7 @@ def main():
                 if x == 3:
                     print(Z)
                     x = 0
-                    break
+                    sys.exit(0)
                 continue
             else:
                 if Z == us_2:
