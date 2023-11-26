@@ -11,9 +11,11 @@ def main():
         print(f"{X} + {Y} = " end='') #print to terminal
         try:
             us_2 = int(input(" "))
-            if
+            if Z != us_2:
+                raise ValueError
         except ValueError:
             pass
+        else
 
 
 
