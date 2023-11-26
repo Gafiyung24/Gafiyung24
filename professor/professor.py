@@ -17,12 +17,13 @@ def main():
                     raise ValueError
             except ValueError:
                 print("EEE")
+                print(f"{X} + {Y} = ", end='')
                 x +=1
                 pass
             else:
                 break
         i +=1
-    score +=1
+        score +=1
     print(score)
 
 
