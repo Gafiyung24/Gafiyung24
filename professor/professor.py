@@ -9,7 +9,10 @@ def main():
         X, Y = generate_integer(user_input) #get values of random ints generated
         Z = X + Y
         print(f"{X} + {Y} = " end='') #print to terminal
-        us_2 = int(input(" "))
+        try:
+            us_2 = int(input(" "))
+        except:
+            pass
         if Z != us_2:
 
 
