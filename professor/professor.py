@@ -19,12 +19,12 @@ def main():
                 print("EEE")
                 print(f"{X} + {Y} = ", end='')
                 x +=1
+                if x == 3:
+                    print(Z)
                 pass
             else:
                 if Z == us_2:
                     score +=1
-                elif x == 3:
-                    print(Z)
                 break
         i +=1
     print(f"{score}")
