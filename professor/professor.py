@@ -56,8 +56,7 @@ def generate_integer(level):# generate intergers based on level entered
         p = random.randrange(100,999)
         q = random.randrange(100,999)
 
-    if p != q:
-        return p, q
+    return p, q
 
 
 
