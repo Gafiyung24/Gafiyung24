@@ -10,7 +10,7 @@ def main():
         X, Y = generate_integer(user_input) #get values of random ints generated
         Z = X + Y
         print(f"{X} + {Y} = ", end='') #print to terminal
-        while x < 2:# check for wrong results and loop 3 times
+        while x < 3:# check for wrong results and loop 3 times
             try:
                 us_2 = int(input(" "))
                 if Z != us_2:
@@ -23,7 +23,7 @@ def main():
             else:
                 if Z == us_2:
                     score +=1
-                elif x == 2:
+                elif x == 3:
                     print(Z)
                 break
         i +=1
