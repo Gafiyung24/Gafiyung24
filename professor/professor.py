@@ -21,14 +21,14 @@ def main():
                 x +=1
                 if x == 3:
                     print(Z)
+                    x = 0
                     break
-                pass
+                continue
             else:
                 if Z == us_2:
                     score +=1
                 break
         i +=1
-        x = 0
     print(f"{score}")
 
 
