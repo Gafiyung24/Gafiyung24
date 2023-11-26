@@ -23,7 +23,7 @@ def main():
                 if x == 3:
                     print(Z)
                     x = 0
-                sys.exit(0)
+                    sys.exit(0)
             else:
                 if Z == us_2:
                     score +=1
