@@ -14,9 +14,10 @@ def main():
             if Z != us_2:
                 raise ValueError
         except ValueError:
+            print("EEE")
             pass
         else:
-            
+
 
 
 
