@@ -15,6 +15,8 @@ def main():
                 us_2 = int(input(" "))
                 if Z != us_2:
                     raise ValueError
+                elif Z == us_2:
+                    score +=1
             except ValueError:
                 print("EEE")
                 print(f"{X} + {Y} = ", end='')
@@ -25,8 +27,6 @@ def main():
                     break
                 pass
             else:
-                if Z == us_2:
-                    score +=1
                 break
         i +=1
     print(f"{score}")
