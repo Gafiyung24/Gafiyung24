@@ -3,14 +3,14 @@ import random
 
 def main():
     user_input = get_level() #level of calculator
-    i = 10
-    x = 3
+    i = 9
+    x = 2
     score = 0
     while i < 10:
         X, Y = generate_integer(user_input) #get values of random ints generated
         Z = X + Y
         print(f"{X} + {Y} = ", end='') #print to terminal
-        while x < 3:
+        while x < 2:# check for wrong results and loop 3 times
             try:
                 us_2 = int(input(" "))
                 if Z != us_2:
@@ -22,6 +22,7 @@ def main():
             else:
                 break
         score +=1
+    print(score)
 
 
 
