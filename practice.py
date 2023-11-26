@@ -1,5 +1,5 @@
 import random
-
+import sys
 
 def main():
     user_input = get_level() #level of calculator
@@ -19,17 +19,19 @@ def main():
                 print("EEE")
                 print(f"{X} + {Y} = ", end='')
                 x +=1
+                pass
                 if x == 3:
                     print(Z)
                     x = 0
-                    break
-                pass
+                    break   #code runs with manual checkng but check50 coming up with errors except I use sys.exit instead of break.
             else:
                 if Z == us_2:
                     score +=1
                 break
         i +=1
-    print(f"{score}")
+    if i == 10:
+        print(score)
+
 
 
 def get_level():# take userinput and check for wrong input
@@ -54,6 +56,7 @@ def generate_integer(level):# generate intergers based on level entered
     elif level == 3:
         p = random.randrange(100,999)
         q = random.randrange(100,999)
+
     return p, q
 
 
