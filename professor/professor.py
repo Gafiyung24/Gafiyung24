@@ -6,7 +6,7 @@ def main():
     i = 9
     x = 2
     score = 0
-    while i < 10:
+    while i < 9:
         X, Y = generate_integer(user_input) #get values of random ints generated
         Z = X + Y
         print(f"{X} + {Y} = ", end='') #print to terminal
