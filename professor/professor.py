@@ -5,18 +5,23 @@ def main():
     user_input = get_level() #level of calculator
     i = 10
     x = 3
+    score = 0
     while i < 10:
         X, Y = generate_integer(user_input) #get values of random ints generated
         Z = X + Y
         print(f"{X} + {Y} = ", end='') #print to terminal
-        try:
-            us_2 = int(input(" "))
-            if Z != us_2:
-                raise ValueError
-        except ValueError:
-            print("EEE")
-            pass
-        else:
+        while x < 3:
+            try:
+                us_2 = int(input(" "))
+                if Z != us_2:
+                    raise ValueError
+            except ValueError:
+                print("EEE")
+                x +=1
+                pass
+            else:
+                break
+
 
 
 
