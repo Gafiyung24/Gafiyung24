@@ -10,8 +10,9 @@ def main():
         X, Y = generate_integer(user_input) #get values of random ints generated
         Z = X + Y
         print(f"{X} + {Y} = ", end='') #print to terminal
-        problem_solver(Z, X, Y)
+        p = problem_solver(Z, X, Y)
         i +=1
+    print(p)
 
 
 def problem_solver(Z, X , Y):
