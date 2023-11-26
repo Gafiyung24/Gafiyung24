@@ -19,6 +19,7 @@ def main():
                 print("EEE")
                 print(f"{X} + {Y} = ", end='')
                 x +=1
+                pass
                 if x == 3:
                     print(Z)
                     x = 0
