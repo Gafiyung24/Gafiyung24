@@ -16,9 +16,9 @@ def main():
 
 
 def problem_solver(Z, X , Y):
-     x = 0
-     score = 0
-     while x < 3:# check for wrong results and loop 3 times
+    x = 0
+    score = 0
+    while x < 3:# check for wrong results and loop 3 times
             try:
                 us_2 = int(input(" "))
                 if Z != us_2:
@@ -36,7 +36,7 @@ def problem_solver(Z, X , Y):
                 if Z == us_2:
                     score +=1
                     break
-        return score
+    return score
 
 
 
