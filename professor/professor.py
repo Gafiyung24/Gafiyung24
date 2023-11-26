@@ -23,7 +23,7 @@ def main():
                 if x == 3:
                     print(Z)
                     x = 0
-                    continue
+                    break
             else:
                 if Z == us_2:
                     score +=1
