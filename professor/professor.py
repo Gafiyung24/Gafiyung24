@@ -32,16 +32,6 @@ def main():
     print(f"{score}")
 
 
-
-
-
-
-
-
-
-
-
-
 def get_level():# take userinput and check for wrong input
     while True:
         try:
