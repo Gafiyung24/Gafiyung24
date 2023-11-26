@@ -31,9 +31,9 @@ def problem_solver(Z, X , Y):
                 x +=1
                 pass
             if x == 3:
-                    print(Z)
-                    x = 0
-                    break   #code runs with manual checkng but check50 coming up with errors except I use sys.exit instead of break.
+                print(Z)
+                x = 0
+                break   #code runs with manual checkng but check50 coming up with errors except I use sys.exit instead of break.
             else:
                 if Z == us_2:
                     score +=1
