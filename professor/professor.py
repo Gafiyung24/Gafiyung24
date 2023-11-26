@@ -8,7 +8,9 @@ def main():
     while i < 10:
         X, Y = generate_integer(user_input) #get values of random ints generated
         Z = X + Y
-        print(f"{X} + {Y} = {input("")}")
+        print(f"{X} + {Y} = " end='')
+        us_2 = input("")
+        
 
 
 
