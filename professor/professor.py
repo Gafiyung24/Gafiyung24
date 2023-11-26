@@ -25,7 +25,7 @@ def main():
             else:
                 break
         i +=1
-    print(f"{score}/10")
+    print(f"{score}")
 
 
 
