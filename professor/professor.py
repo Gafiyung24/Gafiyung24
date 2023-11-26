@@ -29,7 +29,8 @@ def main():
                     score +=1
                 break
         i +=1
-    print(f"{score}")
+    if i == 10:
+        print(scores)
 
 
 
