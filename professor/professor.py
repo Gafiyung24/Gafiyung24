@@ -17,6 +17,8 @@ def main():
                     raise ValueError
                 elif Z == us_2:
                     score +=1
+                elif x == 2:
+                    print(Z)
             except ValueError:
                 print("EEE")
                 print(f"{X} + {Y} = ", end='')
