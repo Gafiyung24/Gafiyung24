@@ -35,7 +35,7 @@ def problem_solver(Z, X , Y):
             else:
                 if Z == us_2:
                     score +=1
-                    break
+        
     return score
 
 
