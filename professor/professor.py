@@ -3,8 +3,8 @@ import sys
 
 def main():
     user_input = get_level() #level of calculator
-    #i = 0
-    x = 0
+    i = 0
+
     score = 0
     while i < 10:# loop to generate 10 questions
         X, Y = generate_integer(user_input) #get values of random ints generated
@@ -19,6 +19,7 @@ def main():
         print(score)
 
 def problem_solver(Z, X , Y):
+     x = 0
      while x < 3:# check for wrong results and loop 3 times
             try:
                 us_2 = int(input(" "))
