@@ -3,10 +3,10 @@ import random
 
 def main():
     user_input = get_level() #level of calculator
-    i = 9
-    x = 2
+    i = 0
+    x = 0
     score = 0
-    while i < 9:
+    while i < 10:
         X, Y = generate_integer(user_input) #get values of random ints generated
         Z = X + Y
         print(f"{X} + {Y} = ", end='') #print to terminal
