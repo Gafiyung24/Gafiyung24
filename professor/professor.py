@@ -21,6 +21,7 @@ def main():
                 pass
             else:
                 break
+        
         score +=1
     print(score)
 
