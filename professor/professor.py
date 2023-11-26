@@ -27,6 +27,7 @@ def main():
             else:
                 if Z == us_2:
                     score +=1
+                    x = 0
                 break
         i +=1
     print(f"{score}")
