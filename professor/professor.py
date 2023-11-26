@@ -10,7 +10,7 @@ def main():
         X, Y = generate_integer(user_input) #get values of random ints generated
         Z = X + Y
         print(f"{X} + {Y} = ", end='') #print to terminal
-        problem_solver(Z)
+        problem_solver(Z, X, Y)
 
 
 
