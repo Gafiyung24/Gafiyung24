@@ -21,10 +21,6 @@ def main():
                 print("EEE")
                 print(f"{X} + {Y} = ", end='')
                 x +=1
-                if x == 3:
-                    print(Z)
-                    x = 0
-                    break
                 pass
             else:
                 break
