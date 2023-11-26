@@ -18,7 +18,7 @@ def main():
     if i == 10:
         print(score)
 
-def problem_solver(Z):
+def problem_solver(Z, X , Y):
      while x < 3:# check for wrong results and loop 3 times
             try:
                 us_2 = int(input(" "))
