@@ -6,7 +6,7 @@ def main():
     i = 0
     x = 0
     score = 0
-    while i < 10:
+    while i < 10:# loop to generate 10 questions
         X, Y = generate_integer(user_input) #get values of random ints generated
         Z = X + Y
         print(f"{X} + {Y} = ", end='') #print to terminal
