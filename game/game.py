@@ -1,5 +1,5 @@
 import random
-
+import sys
 
 def main():
     l, g = check()
@@ -26,8 +26,8 @@ def game(a, b):
         print("Too large!")
     elif a == b:
         print("Just right!")
-    else:
-        print("nothing")
+        sys.exit()
+
 
 
 main()
