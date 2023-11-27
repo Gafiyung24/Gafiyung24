@@ -10,4 +10,6 @@ def value(greeting):
     else:
         value = "$100"
     return value
+if __name__ == "__main__":
+    main()
 
