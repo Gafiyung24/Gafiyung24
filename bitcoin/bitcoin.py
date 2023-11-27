@@ -15,8 +15,9 @@ def get_price():
     return cp
 
 def check_input():
+    #function to check command line argument
     try:
-        float(sys.argv[1])
+        n = float(sys.argv[1])
         if sys.argv != 2:
             raise IndexError
     except IndexError:
@@ -24,7 +25,8 @@ def check_input():
     except ValueError:
         sys.exit("Command-line argument is not a number")
     else:
-        n = float()
+        return n
+
 
 
 main()
