@@ -6,5 +6,8 @@ try:#error handling block of the request from coincap
 except request.RequestException:
     print("There is an issue with the request")
 
+r = response.json()
+
+
 
 
