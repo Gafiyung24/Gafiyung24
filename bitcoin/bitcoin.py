@@ -20,7 +20,7 @@ def check_input():
     #function to check command line argument
     try:
         n = float(sys.argv[1])
-        if sys.argv != 2:
+        if len(sys.argv) != 2:
             raise IndexError
     except IndexError:
         sys.exit("Missing command-line argument")
