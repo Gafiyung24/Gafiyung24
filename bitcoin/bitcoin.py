@@ -13,7 +13,7 @@ def get_price():
         print("There is an issue with the request")
 
     r = response.json()
-    cp = float(r["bpi"["USD"["rate"]]])
+    cp = float(r["bpi"]["USD"]["rate"])
     return cp
 
 def check_input():
