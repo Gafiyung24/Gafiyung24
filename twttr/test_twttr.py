@@ -1,5 +1,6 @@
 from twttr import shorten
 
 def test_word():
-    assert shorten(")
+    assert shorten("already") == "lrdy"
+    assert shorten("EvangElIsm") == "vnglsm"
 
