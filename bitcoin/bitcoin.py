@@ -20,7 +20,8 @@ def check_input():
         if sys.argv != 2:
             raise IndexError
     except IndexError:
-        sys.exit(")
+        sys.exit("Missing command_line argument")
+    except ValueError
 
 
 main()
