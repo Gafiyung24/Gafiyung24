@@ -1,4 +1,4 @@
-import request
+import requests
 import sys
 
 try:#error handling block of the request from coincap
