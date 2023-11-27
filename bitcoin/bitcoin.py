@@ -14,7 +14,8 @@ def get_price():
     cp = float(r["bpi"["USD"["rate"]]])
     return cp
 
-
+def check_input():
+    
 
 
 main()
