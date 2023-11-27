@@ -20,9 +20,11 @@ def check_input():
         if sys.argv != 2:
             raise IndexError
     except IndexError:
-        sys.exit("Missing command_line argument")
+        sys.exit("Missing command-line argument")
     except ValueError:
-        sys.exit("Command-line argument)
+        sys.exit("Command-line argument is not a number")
+    else:
+        n = float()
 
 
 main()
