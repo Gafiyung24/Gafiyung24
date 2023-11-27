@@ -3,5 +3,5 @@ import sys
 
 try:
     request.get("https://api.coindesk.com/v1/bpi/currentprice.json")
-except IndexError:
-    sys.exi
+except request.RequestException:
+    print(")
