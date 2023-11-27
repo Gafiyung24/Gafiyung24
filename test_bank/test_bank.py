@@ -8,4 +8,4 @@ def test_h():
     assert value("hey Gaffy") == "$20"
 def test_others():
     assert value("What's up?") == "$100"
-    assert value("what's ha)
+    assert value("what's happening?") == "$100"
