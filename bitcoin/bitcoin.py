@@ -3,7 +3,7 @@ import sys
 
 def main():
     c_c = get_price() * check_input()
-    print()
+    print(f"${c_c:, .4f})
 
 def get_price():
     #function to get price of btc from coinmarket cap
