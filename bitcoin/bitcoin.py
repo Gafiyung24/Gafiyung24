@@ -1,4 +1,6 @@
 import request
 import sys
 
-try
+try:
+    request.get("https://api.coindesk.com/v1/bpi/currentprice.json")
+except
