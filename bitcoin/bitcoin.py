@@ -21,7 +21,8 @@ def check_input():
             raise IndexError
     except IndexError:
         sys.exit("Missing command_line argument")
-    except ValueError
+    except ValueError:
+        sys.exit("Command-line argument)
 
 
 main()
