@@ -15,7 +15,7 @@ def get_price():
     return cp
 
 def check_input():
-    
+    try
 
 
 main()
