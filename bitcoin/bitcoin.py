@@ -2,7 +2,8 @@ import requests
 import sys
 
 def main():
-    
+    c_c = get_price() * check_input()
+    print()
 
 def get_price():
     #function to get price of btc from coinmarket cap
