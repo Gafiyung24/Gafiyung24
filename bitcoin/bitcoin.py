@@ -15,7 +15,9 @@ def get_price():
     return cp
 
 def check_input():
-    try
+    try:
+        float(sys.argv[1])
+        if sys.argv != 2
 
 
 main()
