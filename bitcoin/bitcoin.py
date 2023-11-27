@@ -13,8 +13,9 @@ def get_price():
         print("There is an issue with the request")
 
     r = response.json()
-    cp = float(r["bpi"]["USD"]["rate"])
-    return cp
+    cp = r["bpi"]["USD"]["rate"]
+    p = float(cp)
+    return p
 
 def check_input():
     #function to check command line argument
