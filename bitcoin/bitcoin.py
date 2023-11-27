@@ -12,3 +12,4 @@ cp = float(r["bpi"["USD"["rate"]]])
 
 
 
+
