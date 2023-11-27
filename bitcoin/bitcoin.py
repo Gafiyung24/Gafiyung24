@@ -7,7 +7,7 @@ except request.RequestException:
     print("There is an issue with the request")
 
 r = response.json()
-
+cp = float(r[])
 
 
 
