@@ -1,11 +1,12 @@
 def main():
-    x = input("Greeting: ").lower().strip()
+    x = input("Greeting: ")
     print(value(x))
 
 def value(greeting):
-    if "hello" in greeting:
+    greetings = greeting.lower().strip()
+    if "hello" in greetings:
         value = "$0"
-    elif greeting.find("h") == 0 and "hello" not in greeting :
+    elif greetings.find("h") == 0 and "hello" not in greetings :
         value = "$20"
     else:
         value = "$100"
