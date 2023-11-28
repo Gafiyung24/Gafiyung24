@@ -20,9 +20,9 @@ def convert(f):
     x = f.split("/")
     if int(x[1]) == 0:
         raise ZeroDivisionError
-    elif x[0].isnumeric or x[1].isnumeric == False:
+    elif int(x[0]).isnumeric or int(x[1]).isnumeric == False:
         raise ValueError
-    elif type
+    elif int(x[0])
 
     return int(x[0])/int(x[1])
 
