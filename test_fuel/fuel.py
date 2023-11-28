@@ -20,7 +20,7 @@ def convert(f):
     x = f.split("/")
     if int(x[1]) == 0:
         raise ZeroDivisionError
-    elif int(x[0]).isnumeric or int(x[1]).isnumeric == False:
+    elif int(x[0]).isnumeric() or int(x[1]).isnumeric() == False:
         raise ValueError
     elif int(x[0]) > int(x[1]):
         raise ValueError
