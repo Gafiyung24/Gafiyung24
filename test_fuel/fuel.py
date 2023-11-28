@@ -2,12 +2,12 @@ def main():
 
     p = input("Fraction: ") #users to enter fraction here X/Y
     l = convert(p) * 100  #l is the percentage of fraction entered
-    guage(l)
+    print(f"{guage(l)}")
 
 
 def guage(l)
     if l <= 1:
-        print("E")
+        retrun f"{"E"}
     elif 99 <= l <= 100:
         print("F")
     elif 1 < l < 99:
