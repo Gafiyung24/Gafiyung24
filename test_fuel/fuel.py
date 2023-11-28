@@ -23,8 +23,11 @@ def convert(f):
             raise ZeroDivisionError
         elif int(x[0]) > int(x[1]):
             raise ValueError
+        else:
+            return int(x[0])/int(x[1])
 
-    return int(x[0])/int(x[1])
+
+
 
 
 
