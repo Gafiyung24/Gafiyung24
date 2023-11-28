@@ -18,7 +18,7 @@ def gauge(l):
 
 def convert(f):
     x = f.split("/")
-    if x[0].isnumeric() or x[1].isnumeric() == False:
+    if x[0].isalpha() or x[1].isapha():
         sys.exit()
     if int(x[1]) == 0:
         raise ZeroDivisionError
