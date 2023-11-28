@@ -2,10 +2,10 @@ def main():
 
     p = input("Fraction: ") #users to enter fraction here X/Y
     l = convert(p) * 100  #l is the percentage of fraction entered
-    print(f"{guage(l)}")
+    print(f"{gauge(l)}")
 
 
-def guage(l):
+def gauge(l):
     if l <= 1:
         return f"E"
     elif 99 <= l <= 100:
