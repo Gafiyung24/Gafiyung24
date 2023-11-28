@@ -26,9 +26,11 @@ def convert(f):
             sys.exit()
         elif int(x[0]) > int(x[1]):
             raise ValueError
-    except:
+    except (ValueError,ZeroDivisionError,SystemExit):
+        print('')
 
-        return int(x[0])/int(x[1])
+
+    return int(x[0])/int(x[1])
 
 
 
