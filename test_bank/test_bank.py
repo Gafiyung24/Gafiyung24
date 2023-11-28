@@ -2,7 +2,7 @@ from bank import value
 
 def test_hello():
     assert value("hello Sam") == "$0"
-    assert value("hello Gaffy") == "$100"
+    assert value("hello Gaffy") == "$0"
 def test_h():
     assert value("hi Sam") == "$20"
     assert value("hey Gaffy") == "$20"
