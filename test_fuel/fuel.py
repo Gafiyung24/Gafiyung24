@@ -20,9 +20,9 @@ def gauge(l):
 
 def convert(f):
         x = f.split("/")
-        try:
-            return (int(x[0])/int(x[1]))
-        except (ValueError, ZeroDivisionError):
+        if int(x[1]) == 0:
+            raise ZeroDivisionError
+        if ValueError
             print('')
 
 
