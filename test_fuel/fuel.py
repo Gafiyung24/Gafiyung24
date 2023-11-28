@@ -2,7 +2,7 @@ def main():
 
     p = input("Fraction: ") #users to enter fraction here X/Y
     l = convert(p) * 100  #l is the percentage of fraction entered
-    print()
+    guage(l)
 
 
 def guage(l)
@@ -13,7 +13,7 @@ def guage(l)
     elif 1 < l < 99:
         print(f"{round(l)}%")
     else:
-        get_level()
+        convert()
 
 
 
