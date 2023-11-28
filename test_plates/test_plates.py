@@ -12,4 +12,5 @@ def test_alnum():
     assert isvalid("50") == False
 def test_mark():
     assert isvalid("HELLO, GOODBYE") == False
+    assert isvalid("GA.50") == False
 
