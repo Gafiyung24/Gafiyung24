@@ -24,7 +24,8 @@ def convert(f):
         try:
             return (int(x[0])/int(x[1]))
         except (ValueError, ZeroDivisionError):
-            
+            print('')
+
 
 
 if __name__ == "__main__":
