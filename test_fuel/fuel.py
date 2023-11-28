@@ -18,14 +18,17 @@ def gauge(l):
 
 def convert(f):
     x = f.split("/")
-    if x[1] == "0":
-        raise ZeroDivisionError
-    elif x[0].isnumeric() or x[1].isnumeric() == False:
-        sys.exit()
-    elif int(x[0]) > int(x[1]):
-        raise ValueError
+    try:
+        int(x[0])/int(x[1])
+        if x[1] == "0":
+            raise ZeroDivisionError
+        elif x[0].isnumeric() or x[1].isnumeric() == False:
+            sys.exit()
+        elif int(x[0]) > int(x[1]):
+            raise ValueError
+    except:
 
-    return int(x[0])/int(x[1])
+        return int(x[0])/int(x[1])
 
 
 
