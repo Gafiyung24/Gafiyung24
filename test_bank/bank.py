@@ -1,6 +1,6 @@
 def main():
     x = input("Greeting: ")
-    print(f"${value(x)})
+    print(f"${value(x)}")
 
 def value(greeting):
     greetings = greeting.lower().strip()
