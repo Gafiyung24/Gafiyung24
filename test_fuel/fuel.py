@@ -1,6 +1,8 @@
 def main():
     l = get_level() * 100
+    p = input("Fraction: ") #users to enter fraction here X/Y
 
+def guage()
     if l <= 1:
         print("E")
     elif 99 <= l <= 100:
@@ -12,9 +14,9 @@ def main():
 
 
 
-def get_level():
+def get_level(f):
     while True:
-        x = input("Fraction: ").split("/")
+        x = f.split("/")
         try:
             return (int(x[0])/int(x[1]))
         except (ValueError, ZeroDivisionError):
