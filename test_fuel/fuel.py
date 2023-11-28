@@ -28,9 +28,8 @@ def convert(f):
             raise ValueError
     except (ValueError,ZeroDivisionError,SystemExit):
         print('')
-
-
-    return int(x[0])/int(x[1])
+    else:
+        return int(x[0])/int(x[1])
 
 
 
