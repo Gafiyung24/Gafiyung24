@@ -9,3 +9,5 @@ def test_h():
 def test_others():
     assert value("What's up?") == "$100"
     assert value("what's happening?") == "$100"
+def test_none():
+    assert value("") == "$100"
