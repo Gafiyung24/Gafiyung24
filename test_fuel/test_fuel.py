@@ -5,7 +5,7 @@ def test_zerodivision():#test for zerodivisions
     with pytest.raises(ZeroDivisionError):
         convert("5/0")
     with pytest.raises(ValueError):
-        
+        convert("5/3")
 """def test_value():#test for non-integer entries
     with pytest.raises(ValueError):
         convert("cat/dog")"""
