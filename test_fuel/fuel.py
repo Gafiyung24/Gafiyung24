@@ -5,13 +5,13 @@ def main():
     print(f"{guage(l)}")
 
 
-def guage(l)
+def guage(l):
     if l <= 1:
-        retrun f"{"E"}
+        return f"E"
     elif 99 <= l <= 100:
-        print("F")
+        return f"F"
     elif 1 < l < 99:
-        print(f"{round(l)}%")
+        return f"{round(l)}%"
     else:
         convert()
 
