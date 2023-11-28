@@ -1,15 +1,15 @@
 def main():
     x = input("Greeting: ")
-    print(value(x))
+    print(f"${value(x)})
 
 def value(greeting):
     greetings = greeting.lower().strip()
     if "hello" in greetings:
-        value = "$0"
+        value = 0
     elif greetings.find("h") == 0 and "hello" not in greetings :
-        value = "$20"
+        value = 20
     else:
-        value = "$100"
+        value = 100
     return value
 if __name__ == "__main__":
     main()
