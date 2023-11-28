@@ -19,7 +19,6 @@ def gauge(l):
 
 
 def convert(f):
-    while True:
         x = f.split("/")
         try:
             return (int(x[0])/int(x[1]))
