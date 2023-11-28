@@ -1,8 +1,8 @@
 def main():
-    l = get_level() * 100
+    l = get_level() * 100  #l is the percentage of fraction entered
     p = input("Fraction: ") #users to enter fraction here X/Y
 
-def guage()
+def guage(l)
     if l <= 1:
         print("E")
     elif 99 <= l <= 100:
