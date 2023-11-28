@@ -1,6 +1,9 @@
 def main():
-    l = get_level() * 100  #l is the percentage of fraction entered
+
     p = input("Fraction: ") #users to enter fraction here X/Y
+    l = convert(p) * 100  #l is the percentage of fraction entered
+    
+
 
 def guage(l)
     if l <= 1:
@@ -14,7 +17,7 @@ def guage(l)
 
 
 
-def get_level(f):
+def convert(f):
     while True:
         x = f.split("/")
         try:
