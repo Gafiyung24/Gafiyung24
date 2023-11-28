@@ -13,8 +13,6 @@ def gauge(l):
         return f"F"
     elif 1 < l < 99:
         return f"{round(l)}%"
-    else:
-        convert()
 
 
 
@@ -22,8 +20,9 @@ def convert(f):
     x = f.split("/")
     if int(x[1]) == 0:
         raise ZeroDivisionError
-    if int(x[0]).isnumeric or int(x[1]).isnumeric == False:
+    elif int(x[0]).isnumeric or int(x[1]).isnumeric == False:
         raise ValueError
+
     return int(x[0])/int(x[1])
 
 
