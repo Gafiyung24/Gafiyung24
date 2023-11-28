@@ -1,4 +1,5 @@
 from fuel import convert, gauge
+import pytest
 
 def test_zerodivision():#test for zerodivisions
     with pytest.raises(ZeroDivisionError):
