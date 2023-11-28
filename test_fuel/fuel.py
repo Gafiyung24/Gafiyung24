@@ -25,8 +25,7 @@ def convert(f):
         if int(x[0]).isnumeric or int(x[1]).isnumeric == False:
             raise ValueError
     except ZeroDivisionError:
-
-    return int(x[0])/int(x[1])
+        
 
 
 
