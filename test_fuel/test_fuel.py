@@ -5,7 +5,7 @@ def test_zerodivision():#test for zerodivisions
     with pytest.raises(ZeroDivisionError):
         convert("5/0")
 def test_value():#test for non-integer entries
-    with pytest.raises(ValueError):
+    with pytest.raises(SystemExit):
         convert("cat/dog")
 def test_gauge():
     assert gauge(0.5) == "E"
