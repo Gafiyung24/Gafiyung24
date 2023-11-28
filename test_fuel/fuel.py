@@ -2,7 +2,7 @@ def main():
 
     p = input("Fraction: ") #users to enter fraction here X/Y
     l = convert(p) * 100  #l is the percentage of fraction entered
-    
+    print()
 
 
 def guage(l)
