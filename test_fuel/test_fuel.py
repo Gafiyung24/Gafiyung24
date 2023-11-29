@@ -3,9 +3,11 @@ import pytest
 
 def test_zerodivision():#test for zerodivisions
     with pytest.raises(ZeroDivisionError):
-        convert("5/0")
+        convert("1/0")
     with pytest.raises(ValueError):
         convert("5/3")
+    with pytest.raises(ValueError):
+        convert("0.9/4")
 """def test_value():#test for non-integer entries
     with pytest.raises(ValueError):
         convert("cat/dog")"""

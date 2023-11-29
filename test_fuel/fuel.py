@@ -21,12 +21,10 @@ def convert(f):
     while x[0].isnumeric() or x[1].isnumeric():
         if x[0].find(".") != -1 or x[1].find(".") != -1:
             raise ValueError
-
-        if int(x[1]) == 0:
+        elif int(x[1]) == 0:
             raise ZeroDivisionError
         elif int(x[0]) > int(x[1]):
             raise ValueError
-        elif
         else:
             return int(x[0])/int(x[1])
 
