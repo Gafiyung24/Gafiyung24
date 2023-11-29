@@ -12,7 +12,7 @@ def gauge(l):
     elif 99 <= l <= 100:
         return f"F"
     elif 1 < l < 99:
-        return f"{round(l)}%"
+        return f"{l}%"
 
 
 
@@ -26,7 +26,7 @@ def convert(f):
         elif int(x[0]) > int(x[1]):
             raise ValueError
         else:
-            return (int(x[0])/int(x[1]))*100
+            return round((int(x[0])/int(x[1])))*100
 
 
 
