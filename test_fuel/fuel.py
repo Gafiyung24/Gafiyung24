@@ -2,7 +2,7 @@ import sys
 def main():
 
     p = input("Fraction: ") #users to enter fraction here X/Y
-    l = convert(p) * 100  #l is the percentage of fraction entered
+    l = convert(p)  #l is the percentage of fraction entered
     print(f"{gauge(l)}")
 
 
@@ -26,7 +26,7 @@ def convert(f):
         elif int(x[0]) > int(x[1]):
             raise ValueError
         else:
-            return int(x[0])/int(x[1])
+            return (int(x[0])/int(x[1]))*100
 
 
 
