@@ -13,6 +13,8 @@ def gauge(l):
         return f"F"
     elif 1 < l < 99:
         return f"{l}%"
+    elif type(l) == float:
+        raise 
 
 
 
