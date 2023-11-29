@@ -56,5 +56,7 @@ for sentence in sentences:
 for word, count in word_counts.items():
     print(f"{word}: {count} times")
 """
-
+x = input(":")
+p = x.split("/")
+print(p)
 
