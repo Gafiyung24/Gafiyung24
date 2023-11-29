@@ -26,6 +26,8 @@ def convert(f):
             raise ZeroDivisionError
         elif int(x[0]) > int(x[1]):
             raise ValueError
+        elif type(round((int(x[0])/int(x[1])))) == float:
+            sys.exit()
         else:
             return round((int(x[0])/int(x[1])))*100
 
