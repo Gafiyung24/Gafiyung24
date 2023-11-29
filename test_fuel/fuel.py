@@ -13,8 +13,7 @@ def gauge(l):
         return f"F"
     elif 1 < l < 99:
         return f"{l}%"
-    elif type(l) == float:
-        raise 
+
 
 
 
@@ -26,6 +25,8 @@ def convert(f):
         elif int(x[1]) == 0:
             raise ZeroDivisionError
         elif int(x[0]) > int(x[1]):
+            raise ValueError
+        elif type(round((int(x[0])/int(x[1])))) == float:
             raise ValueError
         else:
             return round((int(x[0])/int(x[1])))*100
