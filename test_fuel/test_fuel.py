@@ -8,6 +8,7 @@ def test_zerodivision():#test for zerodivisions
         convert("5/3")
     with pytest.raises(ValueError):
         convert("0.9/4")
+    assert convert("1/4") != 0.25
 """def test_value():#test for non-integer entries
     with pytest.raises(ValueError):
         convert("cat/dog")"""
