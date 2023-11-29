@@ -56,10 +56,5 @@ for sentence in sentences:
 for word, count in word_counts.items():
     print(f"{word}: {count} times")
 """
-days = range(31)
-print(days)
 
-x = 5
-if x in days:
-    print(x)
 
