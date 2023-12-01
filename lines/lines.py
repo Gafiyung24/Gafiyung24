@@ -1,7 +1,7 @@
 import sys
 def main():
-    check_arg()
-    c = read(check_arg)
+    f = check_arg()
+    c = read(f)
     print(c)
 
 
