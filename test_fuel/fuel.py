@@ -15,8 +15,6 @@ def gauge(l):
         return f"{l}%"
 
 
-
-
 def convert(f):
     x = f.split("/")
     while x[0].isnumeric() or x[1].isnumeric():
@@ -30,12 +28,6 @@ def convert(f):
             sys.exit()
         else:
             return round((int(x[0])/int(x[1])))*100
-
-
-
-
-
-
 
 if __name__ == "__main__":
     main()
