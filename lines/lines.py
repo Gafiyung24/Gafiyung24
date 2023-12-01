@@ -8,7 +8,7 @@ def main():
 def check_arg():
     #check for condtions of command line argumemts
     if len(sys.argv) < 2:
-        sys.exit("Too few command-line argumrnts")
+        sys.exit("Too few command-line arguments")
     elif len(sys.argv) > 2:
         sys.exit("Too many command_line arguments")
     elif sys.argv[1].find(".py") == -1:
