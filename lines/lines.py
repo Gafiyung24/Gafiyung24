@@ -22,7 +22,7 @@ def read(n):
         sys.exit("File doesn't exist")
     else:
         for line in lines:
-            if line.strip().startwith("#") == False:
+            if line.strip().startswith("#") == False:
                 count += 1
     return count
 
