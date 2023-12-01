@@ -2,6 +2,7 @@ import sys
 def main():
     
 
+
 def check_arg():
     #check for condtions of command line argumemts
     if len(sys.argv) < 2:
@@ -15,15 +16,15 @@ def check_arg():
 def read(n):
     count = 0
     try:
-        with open(n, "r") as file
+        with open(n, "r") as file:
+            lines = file.readlines()
     except FileNotFoundError:
         sys.exit("File doesn't exist")
     else:
-        lines = file.readlines()
         for line in lines:
             if line.strip().startwith("#") == False:
                 count += 1
-        return count
+    return count
 
 if __name__ = "__main__:
     main()
