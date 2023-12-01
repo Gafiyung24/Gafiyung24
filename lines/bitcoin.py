@@ -28,9 +28,6 @@ def check_input():
         sys.exit("Command-line argument is not a number")
     else:
         return n
-
-
-
 main()
 
 
