@@ -1,6 +1,8 @@
 import sys
 def main():
-    
+    check_arg()
+    c = read(check_arg)
+    print(c)
 
 
 def check_arg():
@@ -26,5 +28,5 @@ def read(n):
                 count += 1
     return count
 
-if __name__ = "__main__:
+if __name__ == "__main__":
     main()
