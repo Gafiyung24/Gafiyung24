@@ -9,7 +9,7 @@ def check():#function to check argument
     elif len(sys.argv) > 3:
         sys.exit("Too many command line arguments")
 
-def csv_spliter(n):#function to split 
+def csv_spliter(n):#function to split names in the csv file
     names = []
     try:
         with open(n, "r") as file:
@@ -20,7 +20,8 @@ def csv_spliter(n):#function to split
         sys.exit(f"cannot read {n}")
     else:
         return names
-def csv_writter(w):
+def csv_writter(w):#function to write name in new csv
+    
 
 
 
