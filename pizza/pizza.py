@@ -10,6 +10,8 @@ def main():
     elif c == "regular.csv":
         l = csv_printer2(c) #storing table in a variable
         print(l)
+    else:
+        sys.exit("File doesn't exist")
 
 def check_arg():
     #check for condtions of command line argumemts
