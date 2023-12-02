@@ -30,7 +30,7 @@ def csv_printer():
            # pizzas.append({"Sicilian": line["Sicilian"], "Small": line["Small"], "Large": line["Large"]})
         #for pizza in pizzas:
 
-        print(tabulate(pizzas, headers = "key", tablefmt = "grid"))
+        print(tabulate(pizzas, headers = "keys", tablefmt = "grid"))
 
 
 
