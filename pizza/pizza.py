@@ -17,7 +17,7 @@ def check_arg():
         sys.exit("File doesn't exist")
     return sys.argv[1]
 
-def csv_printer():
+def csv_printer(n):
     pizzas = []
     try:
         with open(n, "r") as file:
