@@ -19,7 +19,7 @@ def main():
 def csv_printer():
     pizzas = []
     try:
-        with open("sicilian.csv", "r") as file:
+        with open("pizza/sicilian.csv", "r") as file:
             lines = csv.DictReader(file)
     except FileNotFoundError:
         sys.exit("File doesn't exist")
