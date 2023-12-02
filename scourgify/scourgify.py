@@ -2,7 +2,8 @@ import csv
 import sys
 
 def main():
-    
+    check()
+    list_names = csv_spliter
 
 def check():#function to check argument
     if len(sys.argv) < 3:
