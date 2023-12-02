@@ -3,8 +3,8 @@ from tabulate import tabulate
 import csv
 
 def main():
-    c= check_arg()
-    l = csv_printer(c)
+    c = check_arg() #storing sys.argv in a variable after check
+    l = csv_printer(c) #storing table in a variable
     print(l)
 
 
@@ -18,7 +18,7 @@ def check_arg():
         sys.exit("File doesn't exist")
     return sys.argv[1]
 
-def csv_printer(n):
+def csv_printer(n):#function to print csv talble
     pizzas = []
     try:
         with open(n, "r") as file:
@@ -28,10 +28,6 @@ def csv_printer(n):
     except FileNotFoundError:
         sys.exit("File doesn't exist")
     else:
-        #for line in lines:
-           # pizzas.append({"Sicilian": line["Sicilian"], "Small": line["Small"], "Large": line["Large"]})
-        #for pizza in pizzas:
-
         pizza_table = tabulate(pizzas, headers = "keys", tablefmt = "grid")
         return pizza_table
 
