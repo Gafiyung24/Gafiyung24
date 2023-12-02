@@ -17,7 +17,9 @@ def csv_spliter(n):
             for line in lines:
                 names.append(line["name"].split(",")[0], line["house"])
     except FileNotFoundError:
-        sys.exit(f"cannot read {n}" )
+        sys.exit(f"cannot read {n}")
+    else:
+        return names
 
 
 if __name__ == "__main__":
