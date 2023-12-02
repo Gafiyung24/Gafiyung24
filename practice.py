@@ -8,6 +8,6 @@ def csv_spliter():#function to split names in the csv file
             for line in lines:
                 names.append([line["name"].strip().split(",")[0], line["house"]])
     except FileNotFoundError:
-        sys.exit(f"cannot read {n}")
+        sys.exit(f"cannot read")
     else:
-        return names
+        print(names)
