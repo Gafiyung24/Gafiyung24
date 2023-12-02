@@ -9,7 +9,13 @@ def check():#function to check argument
     elif len(sys.argv) > 3:
         sys.exit("Too many command line arguments")
 
-def 
+def csv_spliter(n):
+    names = []
+    try:
+        with open(n, "r") as file:
+            lines = csv.DictReader(file)
+            for line in lines:
+                names.append(line["name"].split(",")[0], line["house"]
 
 if __name__ == "__main__":
     main()
