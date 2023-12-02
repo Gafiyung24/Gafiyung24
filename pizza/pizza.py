@@ -4,7 +4,8 @@ import csv
 
 def main():
     pl = check_arg()
-    
+    csv_printer(sys.argv[1])
+
 
 def check_arg():
     #check for condtions of command line argumemts
