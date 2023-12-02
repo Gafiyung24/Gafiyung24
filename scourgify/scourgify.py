@@ -4,7 +4,7 @@ import sys
 def main():
     check()
     list_names = csv_spliter(sys.argv[1])
-    csv_writter(list_names)
+    csv_writter(list_names,sys.argv[2])
 
 def check():#function to check argument
     if len(sys.argv) < 3:
@@ -29,10 +29,6 @@ def csv_writter(w, n2):#function to write name in new csv
         writer.writeheader()
         for ls in w:
             writer.writerows({"first":ls[0],"last":ls[1],"house":ls[2]})
-
-
-
-
 
 if __name__ == "__main__":
     main()
