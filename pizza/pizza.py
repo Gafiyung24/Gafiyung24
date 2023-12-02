@@ -25,12 +25,12 @@ def csv_printer():
                 pizzas.append({"Sicilian Pizza": line["Sicilian Pizza"], "Small": line["Small"], "Large": line["Large"]})
     except FileNotFoundError:
         sys.exit("File doesn't exist")
-    #else:
+    else:
         #for line in lines:
            # pizzas.append({"Sicilian": line["Sicilian"], "Small": line["Small"], "Large": line["Large"]})
     #for pizza in pizzas:
 
-    #print(tabulate(pizzas, headers = "key", tablefmt = "grid"))
+        print(tabulate(pizzas, headers = "key", tablefmt = "grid"))
 
 
 
