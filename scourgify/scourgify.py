@@ -2,6 +2,7 @@ import csv
 import sys
 
 def main():
+    
 
 def check():#function to check argument
     if len(sys.argv) < 3:
@@ -25,7 +26,7 @@ def csv_writter(w, n2):#function to write name in new csv
         writer = csv.DictWriter(file, fieldnames= ["first", "last", "house"])
         writer.writeheader()
         for ls in w:
-        writer.writerows({"first":w[0],"last":w[1],"house":w[2]})
+            writer.writerows({"first":ls[0],"last":ls[1],"house":ls[2]})
 
 
 
