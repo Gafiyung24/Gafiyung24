@@ -22,7 +22,7 @@ def csv_printer():
         with open("pizza/sicilian.csv", "r") as file:
             lines = csv.DictReader(file)
             for line in lines:
-                pizzas.append({"Sicilian": line["Sicilian"], "Small": line["Small"], "Large": line["Large"]})
+                pizzas.append({"Sicilian Pizza": line["Sicilian Pizza"], "Small": line["Small"], "Large": line["Large"]})
     except FileNotFoundError:
         sys.exit("File doesn't exist")
     #else:
