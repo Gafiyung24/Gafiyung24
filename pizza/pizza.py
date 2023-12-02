@@ -3,7 +3,8 @@ from tabulate import tabulate
 import csv
 
 def main():
-    l = csv_printer()
+    c= check_arg()
+    l = csv_printer(c)
     print(l)
 
 
