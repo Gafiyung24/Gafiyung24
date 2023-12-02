@@ -8,7 +8,7 @@ def main():
         l = csv_printer(c) #storing table in a variable
         print(l)
     elif sys.argv[1] == "Regular.csv":
-        l = csv_printer(c) #storing table in a variable
+        l = csv_printer2(c) #storing table in a variable
         print(l)
 
 def check_arg():
@@ -34,7 +34,7 @@ def csv_printer(n):#function to print csv talble
         pizza_table = tabulate(pizzas, headers = "keys", tablefmt = "grid")
         return pizza_table
 
-def csv_printer(n):#function to print csv talble regular pizza
+def csv_printer2(n):#function to print csv talble regular pizza
     pizzas = []
     try:
         with open(n, "r") as file:
