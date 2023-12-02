@@ -20,7 +20,7 @@ def csv_spliter(n):#function to split names in the csv file
         sys.exit(f"cannot read {n}")
     else:
         return names
-def csv_writter(w):#function to write name in new csv
+def csv_writter(w, n2):#function to write name in new csv
     
 
 
