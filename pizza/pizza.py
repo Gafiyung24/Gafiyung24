@@ -16,7 +16,7 @@ def main():
         sys.exit("File doesn't exist")
     return sys.argv[1]"""
 
-def csv_printer("sicillian.csv"):
+def csv_printer():
     pizzas = []
     try:
         with open("sicillian.csv", "r") as file:
