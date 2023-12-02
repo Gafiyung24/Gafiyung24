@@ -16,7 +16,8 @@ def csv_spliter(n):
             lines = csv.DictReader(file)
             for line in lines:
                 names.append(line["name"].split(",")[0], line["house"])
-    e
+    except FileNotFoundError:
+        sys.exit()
 
 
 if __name__ == "__main__":
