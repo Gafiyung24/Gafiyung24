@@ -4,10 +4,10 @@ import csv
 
 def main():
     c = check_arg() #storing sys.argv in a variable after check
-    if c == "Sicilian.csv":
+    if c == "sicilian.csv":
         l = csv_printer(c) #storing table in a variable
         print(l)
-    elif c == "Regular.csv":
+    elif c == "regular.csv":
         l = csv_printer2(c) #storing table in a variable
         print(l)
 
