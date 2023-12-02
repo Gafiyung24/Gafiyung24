@@ -27,7 +27,6 @@ def csv_printer(n):
     else:
         for line in lines:
             pizzas.append({"Sicilian": line["Sicilian"], "Small": line["Small"], "Large": line["Large"]})
-        print(pizzas)
     """for pizza in pizzas:
 
         print(tabulate(pizza, headers = "key", tablefmt = "grid"))"""
