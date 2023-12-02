@@ -21,11 +21,13 @@ def csv_printer():
     try:
         with open("pizza/sicilian.csv", "r") as file:
             lines = csv.DictReader(file)
+            for line in lines:
+                pizzas.append({"Sicilian": line["Sicilian"], "Small": line["Small"], "Large": line["Large"]})
     except FileNotFoundError:
         sys.exit("File doesn't exist")
-    else:
-        for line in lines:
-            pizzas.append({"Sicilian": line["Sicilian"], "Small": line["Small"], "Large": line["Large"]})
+    #else:
+        #for line in lines:
+           # pizzas.append({"Sicilian": line["Sicilian"], "Small": line["Small"], "Large": line["Large"]})
     #for pizza in pizzas:
 
     #print(tabulate(pizzas, headers = "key", tablefmt = "grid"))
