@@ -18,11 +18,12 @@ def csv_printer(n):
     pizzas = []
     try:
         with open(n, "r") as file:
-            line = csv.DictReader(file)
+            lines = csv.DictReader(file)
     except FileNotFoundError:
         sys.exit("File doesn't exist")
     else:
-        
+        for line in lines:
+            pizzas.append("Sicilian": line["Sicilian"])
 
 
 
