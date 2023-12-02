@@ -21,7 +21,8 @@ def csv_spliter(n):#function to split names in the csv file
     else:
         return names
 def csv_writter(w, n2):#function to write name in new csv
-    
+    with open(n2, "a") as file:
+        
 
 
 
