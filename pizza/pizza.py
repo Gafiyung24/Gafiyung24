@@ -5,10 +5,10 @@ import csv
 def main():
     c = check_arg() #storing sys.argv in a variable after check
     if c == "sicilian.csv":
-        l = csv_printer(c) #storing table in a variable
+        l = csv_printer(c) #storing sicilian table in a variable
         print(l)
     elif c == "regular.csv":
-        l = csv_printer2(c) #storing table in a variable
+        l = csv_printer2(c) #storing  regular table in a variable
         print(l)
     else:
         sys.exit("File doesn't exist")
@@ -23,7 +23,7 @@ def check_arg():
         sys.exit("File doesn't exist")
     return sys.argv[1]
 
-def csv_printer(n):#function to print csv talble
+def csv_printer(n):#function to print csv talble of sicilian pizza
     pizzas = []
     try:
         with open(n, "r") as file:
@@ -48,9 +48,6 @@ def csv_printer2(n):#function to print csv talble regular pizza
     else:
         pizza_table = tabulate(pizzas, headers = "keys", tablefmt = "grid")
         return pizza_table
-
-
-
 
 if __name__ == "__main__":
     main()
