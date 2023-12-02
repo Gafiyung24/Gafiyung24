@@ -15,7 +15,9 @@ def csv_spliter(n):
         with open(n, "r") as file:
             lines = csv.DictReader(file)
             for line in lines:
-                names.append(line["name"].split(",")[0], line["name"].splt
+                names.append(line["name"].split(",")[0], line["house"])
+    e
+
 
 if __name__ == "__main__":
     main()
