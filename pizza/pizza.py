@@ -3,6 +3,7 @@ from tabulate import tabulate
 import csv
 
 def main():
+    pl = check_arg()
 
 def check_arg():
     #check for condtions of command line argumemts
@@ -10,7 +11,7 @@ def check_arg():
         sys.exit("Too few command-line arguments")
     elif len(sys.argv) > 2:
         sys.exit("Too many command_line arguments")
-    elif sys.argv[1].find(".py") == -1:
+    elif sys.argv[1].find(".csv") == -1:
         sys.exit("File doesn't exist")
     return sys.argv[1]
 
@@ -23,8 +24,9 @@ def csv_printer(n):
         sys.exit("File doesn't exist")
     else:
         for line in lines:
-            pizzas.append("Sicilian": line["Sicilian"], "Small": line["Small"], "Large": line["Large"])
+            pizzas.append({"Sicilian": line["Sicilian"], "Small": line["Small"], "Large": line["Large"]})
 
+    print(tabulate(pizzas, headers = "key", tablefmt = "grid"))
 
 
 
