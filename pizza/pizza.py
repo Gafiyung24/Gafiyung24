@@ -3,7 +3,8 @@ from tabulate import tabulate
 import csv
 
 def main():
-    csv_printer()
+    l = csv_printer()
+    print(l)
 
 
 """def check_arg():
@@ -31,7 +32,7 @@ def csv_printer():
         #for pizza in pizzas:
 
         pizza_table = tabulate(pizzas, headers = "keys", tablefmt = "grid")
-        print(pizza_table)
+        return pizza_table
 
 
 
