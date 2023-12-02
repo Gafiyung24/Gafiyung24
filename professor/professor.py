@@ -14,7 +14,6 @@ def main():
         i +=1
     print(p)
 
-
 def problem_solver(Z, X , Y):
     x = 0
     score = 0
@@ -38,13 +37,6 @@ def problem_solver(Z, X , Y):
 
     return score
 
-
-
-
-
-
-
-
 def get_level():# take userinput and check for wrong input
     while True:
         try:
@@ -55,7 +47,6 @@ def get_level():# take userinput and check for wrong input
             pass
         else:
             return n
-
 
 def generate_integer(level):# generate intergers based on level entered
     if level == 1:
@@ -69,10 +60,6 @@ def generate_integer(level):# generate intergers based on level entered
         q = random.randrange(100,999)
 
     return p, q
-
-
-
-
 
 if __name__ == "__main__":
     main()
