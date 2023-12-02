@@ -3,11 +3,10 @@ from tabulate import tabulate
 import csv
 
 def main():
-    pl = check_arg()
-    csv_printer(pl)
+    csv_printer()
 
 
-def check_arg():
+"""def check_arg():
     #check for condtions of command line argumemts
     if len(sys.argv) < 2:
         sys.exit("Too few command-line arguments")
@@ -15,12 +14,12 @@ def check_arg():
         sys.exit("Too many command_line arguments")
     elif sys.argv[1].find(".csv") == -1:
         sys.exit("File doesn't exist")
-    return sys.argv[1]
+    return sys.argv[1]"""
 
-def csv_printer(n):
+def csv_printer("sicillian.csv"):
     pizzas = []
     try:
-        with open(n, "r") as file:
+        with open("sicillian.csv", "r") as file:
             lines = csv.DictReader(file)
     except FileNotFoundError:
         sys.exit("File doesn't exist")
