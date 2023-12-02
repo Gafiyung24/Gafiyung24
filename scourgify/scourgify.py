@@ -18,7 +18,7 @@ def csv_spliter(n):#function to split names in the csv file
         with open(n, "r") as file:
             lines = csv.DictReader(file)
             for line in lines:
-                names.extend([line["name"].split(",")[0], line["house"]])
+                names.append([line["name"].split(",")[0], line["house"]])
     except FileNotFoundError:
         sys.exit(f"cannot read {n}")
     else:
@@ -28,7 +28,7 @@ def csv_writter(w, n2):#function to write name in new csv
         writer = csv.DictWriter(file, fieldnames= ["first", "last", "house"])
         writer.writeheader()
         for ls in w:
-            writer.writerows({"first":ls[0],"last":ls[1],"house":ls[2]})
+            writer.writerow({"first":ls[0],"last":ls[1],"house":ls[2]})
 
 if __name__ == "__main__":
     main()
