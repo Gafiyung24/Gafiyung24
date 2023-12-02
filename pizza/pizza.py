@@ -26,7 +26,7 @@ def csv_printer(n):
         sys.exit("File doesn't exist")
     else:
         for line in lines:
-            pizzas.append({"Sicilian": line["Sicilian"], "Small": line["Small"], "Large": line["Large"]})
+            pizzas.append({line["Sicilian"], line["Small"],line["Large"]})
     for pizza in pizzas:
 
         print(tabulate(pizza, headers = "key", tablefmt = "grid"))
