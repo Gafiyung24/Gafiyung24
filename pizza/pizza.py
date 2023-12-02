@@ -23,7 +23,7 @@ def csv_printer(n):
         sys.exit("File doesn't exist")
     else:
         for line in lines:
-            pizzas.append("Sicilian": line["Sicilian"])
+            pizzas.append("Sicilian": line["Sicilian"], "Small": line["Small"], "Large": line["Large"])
 
 
 
