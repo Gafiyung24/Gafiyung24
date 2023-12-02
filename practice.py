@@ -1,9 +1,9 @@
 import csv
 import sys
-def csv_spliter(n):#function to split names in the csv file
+def csv_spliter():#function to split names in the csv file
     names = []
     try:
-        with open(n, "r") as file:
+        with open("scourgify/scourgify.csv", "r") as file:
             lines = csv.DictReader(file)
             for line in lines:
                 names.append([line["name"].strip().split(",")[0], line["house"]])
