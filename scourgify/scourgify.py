@@ -18,7 +18,7 @@ def csv_spliter(n):#function to split names in the csv file
         with open(n, "r") as file:
             lines = csv.DictReader(file)
             for line in lines:
-                names.append([line["name"].strip().split(",")[0],line["name"].lstrip().split(",")[1], line["house"]])
+                names.append([line["name"].strip().split(",")[0],line["name"].split(",")[1].lstrip(), line["house"]])
     except FileNotFoundError:
         sys.exit(f"cannot read {n}")
     else:
