@@ -7,7 +7,7 @@ try:
     with open("scourgify/before.csv", "r") as file:
         lines = csv.DictReader(file)
         for line in lines:
-            names.append([line["name"].strip().split(",")[0], line["house"]])
+            names.append([line["name"].strip().split(",")[0], line["name"].strip().split(",")[0], line["house"]])
 except FileNotFoundError:
     sys.exit(f"cannot read")
 else:
