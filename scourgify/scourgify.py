@@ -28,7 +28,7 @@ def csv_writter(w, n2):#function to write name in new csv
         writer = csv.DictWriter(file, fieldnames= ["first", "last", "house"])
         writer.writeheader()
         for ls in w:
-            writer.writerow({"first":ls[0],"last":ls[1],"house":ls[2]})
+            writer.writerow({"first":ls[1],"last":ls[0],"house":ls[2]})
 
 if __name__ == "__main__":
     main()
