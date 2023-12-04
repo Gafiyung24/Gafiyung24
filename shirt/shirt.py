@@ -30,6 +30,5 @@ def paste():
             im2.paste(im_shirt, im_shirt)
 
 
-
 if __name__ == "__main__":
     main()
