@@ -21,7 +21,11 @@ def paste():
     try:
         with Image.open(sys.argv[1]) as im1:
         ImageOps.fit(im1, size).save(sys.argv[2])
-    except 
+    except OSError:
+        sys.exit("File can't be opened")
+    else:
+        with Image.open(sys.argv[2]) as im2:
+            im2.paste(im_)
 
 
 
