@@ -20,6 +20,7 @@ def check():
 def paste():
     im_shirt = Image.open("shirt.png")
     size = im_shirt.size
+    mask = im_shirt.convert("L")
     try:
         with Image.open(sys.argv[1]) as im1:
             ImageOps.fit(im1, size).save(sys.argv[2])
@@ -27,7 +28,7 @@ def paste():
         sys.exit("File can't be opened")
     else:
         with Image.open(sys.argv[2]) as im2:
-            im2.paste(im_shirt, im_shirt)
+            im2.paste(im_shirt, mask)
 
 
 if __name__ == "__main__":
