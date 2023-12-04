@@ -11,11 +11,12 @@ def check():
     elif len(sys.argv) > 3:
         sys.exit("Too many command-line arguments")
     elif ext1.lower() not in ext and ext2.lower() not in ext:
-        sys.exit("Input and Output have different extensions")
+        sys.exit("unknown extensions")
     elif ext1 != ext2:
-        sys.exit("Unknown file type")
+        sys.exit("Input and Output have different extensions")
 
-def paste()
+def paste():
+    
 
 
 if __name__ == "__main__":
