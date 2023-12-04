@@ -1,5 +1,5 @@
 import os, sys
-from PIL import Image
+from PIL import Image, ImageOps
 def main():
 
 def check():
@@ -16,7 +16,13 @@ def check():
         sys.exit("Input and Output have different extensions")
 
 def paste():
-    
+    im_shirt = Image.open("shirt.png")
+    size = im_shirt.size
+    try:
+        with Image.open(sys.argv[1]) as im1:
+        ImageOps.fit(im1, size).save(sys.argv[2])
+    except 
+
 
 
 if __name__ == "__main__":
