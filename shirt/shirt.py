@@ -1,6 +1,8 @@
 import os, sys
 from PIL import Image, ImageOps
 def main():
+    check()
+    paste()
 
 def check():
     ext = (".jpg", "jpeg", "png")
@@ -20,7 +22,7 @@ def paste():
     size = im_shirt.size
     try:
         with Image.open(sys.argv[1]) as im1:
-        ImageOps.fit(im1, size).save(sys.argv[2])
+            ImageOps.fit(im1, size).save(sys.argv[2])
     except OSError:
         sys.exit("File can't be opened")
     else:
