@@ -27,7 +27,7 @@ def paste():
         sys.exit("File can't be opened")
     else:
         with Image.open(sys.argv[2]) as im2:
-            im2.paste(im_shirt)
+            im2.paste(im_shirt, im_shirt)
 
 
 
