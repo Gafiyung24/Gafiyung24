@@ -15,6 +15,8 @@ def check():
     elif ext1 != ext2:
         sys.exit("Unknown file type")
 
+def paste()
+
 
 if __name__ == "__main__":
     main()
