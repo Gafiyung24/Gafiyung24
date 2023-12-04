@@ -20,6 +20,7 @@ def check():
 def paste():
     im_shirt = Image.open("shirt.png")
     size = im_shirt.size
+    mask = im_shirt.convert("L")
     try:
         with Image.open(sys.argv[1]) as im1:
             ImageOps.fit(im1, size).save(sys.argv[2])
