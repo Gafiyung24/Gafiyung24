@@ -2,7 +2,7 @@ import os, sys
 from PIL import Image, ImageOps
 def main():
     check()
-    paste()
+    paste(sys.argv[1], sys.argv[2])
 
 def check():
     ext = (".jpg", "jpeg", "png")
@@ -17,20 +17,20 @@ def check():
     elif ext1 != ext2:
         sys.exit("Input and Output have different extensions")
 
-def paste():
+def paste(n1, n2):
     im_shirt = Image.open("shirt.png")
     size = im_shirt.size
     #mask = im_shirt.convert("L")
     mask = im_shirt.split()[3]
     try:
-        with Image.open(sys.argv[1]) as im1:
-            ImageOps.fit(im1, size).save(sys.argv[2])
+        with Image.open(n1) as im1:
+            ImageOps.fit(im1, size).save(n2)
     except OSError:
         sys.exit("File can't be opened")
     else:
-        with Image.open(sys.argv[2]) as im2:
+        with Image.open(n2) as im2:
             im2.paste(im_shirt, (0, 0), mask)
-            return im2.save(sys.argv[2])
+            return im2.save(n2)
 
 if __name__ == "__main__":
     main()
