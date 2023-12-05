@@ -1,9 +1,9 @@
 import os, sys
 from PIL import Image, ImageOps
 def main():
-    shirt = "shirt.png"
+    
     check()
-    paste(shirt, sys.argv[1], sys.argv[2])
+    paste(sys.argv[1], sys.argv[2])
 
 
 def check():
@@ -19,8 +19,8 @@ def check():
     elif ext1 != ext2:
         sys.exit("Input and Output have different extensions")
 
-def paste(n0, n1, n2):
-    im_shirt = Image.open(n0)
+def paste(n1, n2):
+    im_shirt = Image.open("shirt.png")
     size = im_shirt.size
     #mask = im_shirt.convert("L")
     #mask = im_shirt.split()[3]
@@ -35,6 +35,7 @@ def paste(n0, n1, n2):
         with Image.open(n1) as im2:
             im2.paste(im_shirt, im_shirt)
             return im2.save(n2)"""
-    
+
+
 if __name__ == "__main__":
     main()
