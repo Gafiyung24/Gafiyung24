@@ -35,7 +35,6 @@ def paste(n0, n1, n2):
         with Image.open(n1) as im2:
             im2.paste(im_shirt, im_shirt)
             return im2.save(n2)"""
-
-
+    
 if __name__ == "__main__":
     main()
