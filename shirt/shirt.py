@@ -28,7 +28,7 @@ def paste(n1, n2):
     except OSError:
         sys.exit("File can't be opened")
     else:
-        with Image.open(n2) as im2:
+        with Image.open(n1) as im2:
             im2.paste(im_shirt, im_shirt)
             return im2.save(n2)
 
