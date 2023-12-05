@@ -14,7 +14,7 @@ else:
     print(names)
 
 
-def paste(n1, n2):
+'''def paste(n1, n2):
     im_shirt = Image.open("shirt.png")
     size = im_shirt.size
     #mask = im_shirt.convert("L")
@@ -28,3 +28,4 @@ def paste(n1, n2):
         with Image.open(n2) as im2:
             im2.paste(im_shirt, im_shirt)
             return im2.save(n2)
+'''
