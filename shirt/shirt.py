@@ -26,7 +26,7 @@ def paste(n1, n2):
     #mask = im_shirt.split()[3]
     try:
         with Image.open(n1) as im1:
-            ImageOps.fit(im1, size)
+            ImageOps.fit(im1, size).save(n1)
     except OSError:
         sys.exit("File can't be opened")
     else:
