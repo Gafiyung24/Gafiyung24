@@ -30,7 +30,7 @@ def paste():
     else:
         with Image.open(sys.argv[2]) as im2:
             im2.paste(im_shirt, mask)
-            im2.save(sys.argv[2])
+            return im2.save(sys.argv[2])
 
 if __name__ == "__main__":
     main()
