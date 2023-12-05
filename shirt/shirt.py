@@ -29,7 +29,7 @@ def paste():
         sys.exit("File can't be opened")
     else:
         with Image.open(sys.argv[2]) as im2:
-            im2.paste(im_shirt, mask)
+            im2.paste(im_shirt, (0, 0), mask)
             return im2.save(sys.argv[2])
 
 if __name__ == "__main__":
