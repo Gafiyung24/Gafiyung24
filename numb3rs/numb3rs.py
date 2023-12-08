@@ -11,7 +11,7 @@ def validate(ip):
     if match:
         for i in range(4):
             if int(match.group(i+1)) > 255:
-                return False
+                t = false
             else:
                 return True
 
