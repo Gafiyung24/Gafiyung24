@@ -6,5 +6,6 @@ def test_validate():
     assert validate("1000.400.300.500") == False
     assert validate("cat") == False
     assert validate("1.500.2000.1000") == False
+    assert validate("1.20.500.600") ==False
 
 
