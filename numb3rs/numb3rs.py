@@ -7,9 +7,14 @@ def main():
 
 
 def validate(ip):
-    match = re.search(r"^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$", ip)
+    match = re.search(r"^([0-9]+)\.([0-9]+)\.([0-9]+)\.([0-9]+)$", ip)
     if match:
-        return True
+        for i in range(4):
+            if int(match.group(i)) > 255:
+                return False
+            else:
+                return True
+         
     else:
         return False
 
