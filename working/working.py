@@ -8,7 +8,7 @@ def main():
 
 def convert(s):
     #find match for pattern 9:00 AM to 5:00PM with regex
-    if match:= re.search(r"^([0-9]+):([0-9]) {1}(AM|PM) {1}to {1}([0-9]+):([0-9]) {1}(AM|PM)$", s)
+    if match:= re.search(r"^([0-9]+):([0-9]) {1}(AM|PM) {1}to {1}([0-9]+):([0-9]) {1}(AM|PM)$", s):
         #conditionals to make sure input meets specified criteria
         try:
             if int(match.group(1)) > 12 or int(match.group(4)) > 12:
@@ -28,7 +28,16 @@ def convert(s):
             elif match.group(3) == "PM" and match.group(6) == "PM":
                 return f"{int(match.group(1))+12}:{int(match.group(2)):02} to {int(match.group(4))+12}:{int(match.group(5)):02}"
     #matching 9 AM to 5 PM entry format
-    elif match:= re.search(r"([0-9]+) {1}(AM|PM) {1}to {1}([0-9]+) {1}(AM|PM)", s)
+    elif match:= re.search(r"([0-9]+) {1}(AM|PM) {1}to {1}([0-9]+) {1}(AM|PM)", s):
+        try:
+            if int(match.group(1)) > 12 or int(match.group(3)) > 12:
+                raise ValueError
+        except ValueError:
+            sys.exit("Time entered is wrong 2")
+        else:
+            if match.group(2)
+
+
 
 
 
