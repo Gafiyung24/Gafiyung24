@@ -44,7 +44,7 @@ def convert(s):
             elif match.group(2) == "PM" and match.group(4) == "PM":
                 return f"{int(match.group(1))+12}:00 to {int(match.group(3))+12}:00"
     #matching 9 AM to 5:00 PM format
-    elif match:= re.search(r"^([0-9]+) {1}(AM|PM) {1}to {1}([0-9]+):([0-9]) {1}(AM|PM)$", s):
+    elif match:= re.search(r"^([0-9]+) {1}(AM|PM) {1}to {1}([0-9]+):([0-9]+) {1}(AM|PM)$", s):
         try:
             if int(match.group(1)) > 12 or int(match.group(3)) > 12:
                 raise ValueError
