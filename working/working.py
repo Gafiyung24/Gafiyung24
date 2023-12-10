@@ -12,7 +12,20 @@ def convert(s):
     if match:
         #conditionals to make sure input meets specified criteria
         try:
-            if int(match.group(1))
+            if int(match.group(1)) > 12 or int(match.group(4)) > 12:
+                raise ValueError
+            elif int(match.group(2)) > 60 or int(match.group(5)) >60:
+                raise ValueError
+        except ValueError:
+            sys.exit("Time entered is wrong")
+        else:
+            #returning output if AM or PM was entered with time
+            if match.group(3) == "AM" and match.group(6) == "AM":
+                return f"{int(match.group(1)):02}:{int(match.group(2))} to {int(match.group(4)):02}:{int(match.group(5))}"
+            elif match.group(3) == "AM" and match.group(6) == "PM":
+                return f"{int(match.group(1)):02}:{int(match.group(2))} to {int(match.group(4))+12}:{int(match.group(5))}"
+            elif match.group(3) == "PM" and match.group(6) == "AM":
+                return f"{int(match.group())}
 
 
 
