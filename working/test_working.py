@@ -16,4 +16,11 @@ def test_ValueError1():
         convert("9:00 AM to 5:70 PM")
 def test_ValueError2():
     with pytest.raises(ValueError):
-        convert(")
+        convert("9:00 to 5:00")
+    with pytest.raises(ValueError):
+        convert("9 AM to 5:00")
+    with pytest.raises(ValueError):
+        convert("9 AM - 5 PM")
+        
+    with pytest.raises(ValueError):
+        convert("9:00 AM - 5:00 PM")
