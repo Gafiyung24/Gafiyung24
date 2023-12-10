@@ -74,7 +74,8 @@ def convert(s):
             elif match.group(3) == "AM" and match.group(5) == "PM":
                 return f"{int(match.group(1)):02}:{int(match.group(2)):02} to {int(match.group(4))+12}:00"
             elif match.groups(3) == "PM" and match.group(5) == "AM":
-                
+                return f"{int(match.group(1))+12}:{int(match.group(2)):02} to 
+
 
 
 
