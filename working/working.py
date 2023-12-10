@@ -51,7 +51,9 @@ def convert(s):
         except ValueError:
             sys.exit("Time entered is wrong 3")
         else:
-            
+            if match.group(2) == "AM" and match.group(5) == "AM":
+                return f"{int(match.group(1)):02}:00 to "
+            elif match.group(2) == "AM" and match.group(4) == "PM":
 
 
 
