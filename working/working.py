@@ -36,14 +36,14 @@ def convert(s):
             sys.exit("Time entered is wrong 2")
         else:
             if match.group(2) == "AM" and match.group(4) == "AM":
-                return f"{int(match.group(1)):02} to {int(match.group(3)):02}"
+                return f"{int(match.group(1)):02}:00 to {int(match.group(3)):02}:00"
             elif match.group(2) == "AM" and match.group(4) == "PM":
-                return f"{int(match.group(1)):02} to {int(match.group(3))+12}"
+                return f"{int(match.group(1)):02}:00 to {int(match.group(3))+12}:00"
             elif match.group(2) == "PM" and match.group(4) == "AM":
-                return f"{int(match.group(1))+12} to {int(match.group(3)):02}"
+                return f"{int(match.group(1))+12}:00 to {int(match.group(3)):02}:00"
             elif match.group(2) == "PM" and match.group(4) == "PM":
-                return f"{int(match.group(1))+12} to {int(match.group(3))+12}"
-            
+                return f"{int(match.group(1))+12}:00 to {int(match.group(3))+12}:00"
+
 
 
 
