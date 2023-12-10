@@ -69,7 +69,8 @@ def convert(s):
         except ValueError:
             sys.exit("Time entered is wrong 4")
         else:
-            if match.group(3) == "AM"
+            if match.group(3) == "AM" and match.group(5) == "PM":
+                return f"
 
 
 
