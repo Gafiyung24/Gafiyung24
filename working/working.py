@@ -49,7 +49,10 @@ def convert(s):
             if int(match.group(1)) > 12 or int(match.group(3)) > 12:
                 raise ValueError
         except ValueError:
+            sys.exit("Time entered is wrong 3")
+        else:
             
+
 
 
 
