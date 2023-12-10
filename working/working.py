@@ -62,7 +62,8 @@ def convert(s):
     #matching 9:00 AM to 5 PM format
     elif match:= re.search(r"^([0-9]+):([0-9]+)) {1}(AM|PM) {1}to {1}([0-9]+) {1}(AM|PM)$", s):
         try:
-            if 
+            if int(match.group(1)) > 12 or int(match.group(4)) > 12:
+                raise ValueError
 
 
 
