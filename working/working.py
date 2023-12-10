@@ -28,7 +28,7 @@ def convert(s):
             elif match.group(3) == "PM" and match.group(6) == "PM":
                 return f"{int(match.group(1))+12}:{int(match.group(2)):02} to {int(match.group(4))+12}:{int(match.group(5)):02}"
     #matching 9 AM to 5 PM entry format
-    elif match:= re.search(r"([0-9]+) {1})
+    elif match:= re.search(r"([0-9]+) {1}(AM|PM) {1}to {1}([0-9]+) {1}(AM|PM)", s)
 
 
 
