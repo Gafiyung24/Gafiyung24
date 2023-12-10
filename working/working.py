@@ -54,6 +54,7 @@ def convert(s):
             if match.group(2) == "AM" and match.group(5) == "AM":
                 return f"{int(match.group(1)):02}:00 to {int(match.group(3)):02}:{int(match.group(4)):02}"
             elif match.group(2) == "AM" and match.group(4) == "PM":
+                return f"{int(match.group(1)):02}:00
 
 
 
