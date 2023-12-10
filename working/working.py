@@ -16,10 +16,6 @@ def convert(s):
                 raise ValueError
             elif int(match.group(2)) > 60 or int(match.group(5)) >60:
                 raise ValueError
-            elif match.group(2) == None:
-                match.group(2) == 0
-            elif match.group(4) == None:
-                match.group(4) == 0
         except ValueError:
             sys.exit("Time entered is wrong")
         else:
