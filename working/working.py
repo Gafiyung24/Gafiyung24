@@ -64,8 +64,13 @@ def convert(s):
         try:
             if int(match.group(1)) > 12 or int(match.group(4)) > 12:
                 raise ValueError
-            elif int(match.group(2)) > 60 or int(match.group(5)) >60:
+            elif int(match.group(2)) > 60:
                 raise ValueError
+        except ValueError:
+            sys.exit("Time entered is wrong 4")
+        else:
+            if match.group(3) == "AM"
+
 
 
 
