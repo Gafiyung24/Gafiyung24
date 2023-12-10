@@ -7,7 +7,7 @@ def main():
 
 
 def convert(s):
-    match = re.search(r"^([0-9]+):([0-9]+))
+    match = re.search(r"^([0-9]+):([0-9]+) {1}(AM|PM) {1}to {1}([0-9]+):
 
 
 
