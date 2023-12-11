@@ -11,4 +11,5 @@ def test_type2():
 def test_type3():
     assert count("Um, UM, um") == 3
     assert count("uM, um, UM") == 3
-
+def test_type4():
+    assert count("yummy, tummy, fummy") == 0
