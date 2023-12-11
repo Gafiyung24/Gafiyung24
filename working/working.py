@@ -10,13 +10,10 @@ def convert(s):
     #find match for pattern 9:00 AM to 5:00PM with regex
     if match:= re.search(r"^([0-9]+):([0-9]+) {1}(AM|PM) {1}to {1}([0-9]+):([0-9]+) {1}(AM|PM)$", s):
         #conditionals to make sure input meets specified criteria
-        try:
-            if int(match.group(1)) > 12 or int(match.group(4)) > 12:
-                raise ValueError
-            elif int(match.group(2)) > 60 or int(match.group(5)) >60:
-                raise ValueError
-        except ValueError:
-            print("Time entered is wrong")
+        if int(match.group(1)) > 12 or int(match.group(4)) > 12:
+            raise ValueError
+        elif int(match.group(2)) > 60 or int(match.group(5)) >60:
+            raise ValueError
         else:
             #converting input to output on how AM or PM was entered with time
             if match.group(3) == "AM" and match.group(6) == "AM":
@@ -29,11 +26,8 @@ def convert(s):
                 return f"{int(match.group(1))+12}:{int(match.group(2)):02} to {int(match.group(4))+12}:{int(match.group(5)):02}"
     #matching 9 AM to 5 PM entry format
     elif match:= re.search(r"([1-9]) {1}(AM|PM) {1}to {1}([1-9]) {1}(AM|PM)$", s):
-        try:
-            if int(match.group(1)) > 12 or int(match.group(3)) > 12:
-                raise ValueError
-        except ValueError:
-            sys.exit("Time entered is wrong 2")
+        if int(match.group(1)) > 12 or int(match.group(3)) > 12:
+            raise ValueError
         else:
             if match.group(2) == "AM" and match.group(4) == "AM":
                 return f"{int(match.group(1)):02}:00 to {int(match.group(3)):02}:00"
@@ -45,11 +39,9 @@ def convert(s):
                 return f"{int(match.group(1))+12}:00 to {int(match.group(3))+12}:00"
     #matching 9 AM to 5:00 PM format
     elif match:= re.search(r"^([0-9]+) {1}(AM|PM) {1}to {1}([0-9]+):([0-9]+) {1}(AM|PM)$", s):
-        try:
-            if int(match.group(1)) > 12 or int(match.group(3)) > 12:
-                raise ValueError
-        except ValueError:
-            print("Time entered is wrong 3")
+        if int(match.group(1)) > 12 or int(match.group(3)) > 12:
+            raise ValueError
+
         else:
             if match.group(2) == "AM" and match.group(5) == "AM":
                 return f"{int(match.group(1)):02}:00 to {int(match.group(3)):02}:{int(match.group(4)):02}"
@@ -61,13 +53,11 @@ def convert(s):
                 return f"{int(match.group(1))+12}:00 to {int(match.group(3))+12}:{int(match.group(4)):02}"
     #matching 9:00 AM to 5 PM format
     elif match:= re.search(r"^([0-9]+):([0-9]+) {1}(AM|PM) {1}to {1}([0-9]+) {1}(AM|PM)$", s):
-        try:
-            if int(match.group(1)) > 12 or int(match.group(4)) > 12:
-                raise ValueError
-            elif int(match.group(2)) > 60:
-                raise ValueError
-        except ValueError:
-            print("Time entered is wrong 4")
+        if int(match.group(1)) > 12 or int(match.group(4)) > 12:
+            raise ValueError
+        elif int(match.group(2)) > 60:
+            raise ValueError
+
         else:
             if match.group(3) == "AM" and match.group(5) == "AM":
                 return f"{int(match.group(1)):02}:{int(match.group(2)):02} to {int(match.group(4)):02}:00"
@@ -79,10 +69,8 @@ def convert(s):
                 return f"{int(match.group(1))+12}:{int(match.group(2)):02} to {int(match.group(4))+12}:00"
 
     elif match == None:
-        try:
-            raise ValueError
-        except ValueError:
-            print("Wrong Pattern")
+        raise ValueError
+    
 
 
 
