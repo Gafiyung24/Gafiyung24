@@ -15,7 +15,7 @@ def convert(s):
         elif int(match.group(2)) >= 60 or int(match.group(5)) >= 60:
             raise ValueError
         elif int(match.group(1)) == 12 and match.group(3) == "AM" and int(match.group(4)) == 12 and match.group(6) == "PM":
-            return f"{int(match.group(1))*0:02} to {int}
+            return f"{int(match.group(1))*0:02}:{int(match.group(2)):02} to {int(match.group(4)):02}:{int(match.group(5)):02}"
         else:
             #converting input to output on how AM or PM was entered with time
             if match.group(3) == "AM" and match.group(6) == "AM":
@@ -30,6 +30,7 @@ def convert(s):
     elif match:= re.search(r"([1-9]) {1}(AM|PM) {1}to {1}([1-9]) {1}(AM|PM)$", s):
         if int(match.group(1)) > 12 or int(match.group(3)) > 12:
             raise ValueError
+        elif int(match.group(1))
         else:
             if match.group(2) == "AM" and match.group(4) == "AM":
                 return f"{int(match.group(1)):02}:00 to {int(match.group(3)):02}:00"
