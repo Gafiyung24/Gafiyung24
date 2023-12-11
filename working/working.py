@@ -15,7 +15,7 @@ def convert(s):
         elif int(match.group(2)) >= 60 or int(match.group(5)) >= 60:
             raise ValueError
         elif int(match.group(1)) == 12 and match.group(3) == "AM" and int(match.group(4)) == 12 and match.group(6) == "PM":
-            return f"
+            return f"{int(match.group(1))*0:02} to {int}
         else:
             #converting input to output on how AM or PM was entered with time
             if match.group(3) == "AM" and match.group(6) == "AM":
