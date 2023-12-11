@@ -74,9 +74,5 @@ def convert(s):
 
     elif match == None:
         raise ValueError
-
-
-
-
 if __name__ == "__main__":
     main()
