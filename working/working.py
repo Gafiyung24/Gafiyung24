@@ -30,7 +30,8 @@ def convert(s):
     elif match:= re.search(r"([1-9]) {1}(AM|PM) {1}to {1}([1-9]) {1}(AM|PM)$", s):
         if int(match.group(1)) > 12 or int(match.group(3)) > 12:
             raise ValueError
-        elif int(match.group(1))
+        elif int(match.group(1)) == 12 and match.group(2) == "AM" and int(match.group(3)) == 12 and match.group(4) == "PM":
+            return f"{int}
         else:
             if match.group(2) == "AM" and match.group(4) == "AM":
                 return f"{int(match.group(1)):02}:00 to {int(match.group(3)):02}:00"
