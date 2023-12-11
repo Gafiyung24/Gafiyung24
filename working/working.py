@@ -77,6 +77,8 @@ def convert(s):
                 return f"{int(match.group(1))+12}:{int(match.group(2)):02} to {int(match.group(4)):02}:00"
             elif match.groups(3) == "PM" and match.group(5) == "PM":
                 return f" {int(match.group(1))+12}:{int(match.group(2)):02} to {int(match.group(4))+12}:00"
+    else:
+        raise ValueError
 
 
 if __name__ == "__main__":
