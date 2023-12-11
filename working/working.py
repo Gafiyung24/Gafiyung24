@@ -12,7 +12,7 @@ def convert(s):
         #conditionals to make sure input meets specified criteria
         if int(match.group(1)) > 12 or int(match.group(4)) > 12:
             raise ValueError
-        elif int(match.group(2)) > 60 or int(match.group(5)) >60:
+        elif int(match.group(2)) >= 60 or int(match.group(5)) >= 60:
             raise ValueError
         else:
             #converting input to output on how AM or PM was entered with time
@@ -70,7 +70,7 @@ def convert(s):
 
     elif match == None:
         raise ValueError
-    
+
 
 
 
