@@ -7,9 +7,9 @@ def main():
 def checker(s):
     response = checkers.is_email(s)
     if response:
-        return valid
+        return "valid"
     else:
-        return invalid
+        return "invalid"
 
 
 
